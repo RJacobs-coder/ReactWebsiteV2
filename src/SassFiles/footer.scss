@@ -1,0 +1,22 @@
+$color1: #4cd7f4;
+$color2: #00a8d6;
+$color3: #e2feff;
+$color4: #fcfcd4;
+
+$picsize: 50px;
+
+// This file serves as the styling for the Footer Element located at the bottom of the page.
+
+
+//Footer
+#Footer {
+  h1{
+    color:#00a8d6;
+    font-size:20px;
+  }
+    background: $color4;
+    width: 100%;
+    bottom: 0px;
+    position:absolute;
+
+  }

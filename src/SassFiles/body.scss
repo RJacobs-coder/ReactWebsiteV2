@@ -1,0 +1,225 @@
+$color1: #4cd7f4;
+$color2: #00a8d6;
+$color3: #e2feff;
+$color4: #fcfcd4;
+
+$picsize: 50px;
+
+// This file serves as the styling for many different Body Components located in the 
+// src/LayoutComponents/BodyComponents Folder.
+
+// Default values for all Body Components.
+.MainBody {
+  padding-left: 15%;
+  padding-bottom: 0%;
+  background-color: $color2;
+  top: 100px;
+  position: absolute;
+  float: right;
+  z-index: -1;
+  max-width: 80%;
+  width: 100%;
+
+  list-style-type: none;
+}
+
+// AboutMe Body Section. AboutMeBody.js Component
+.ListTestingGallery {
+  list-style-type: none;
+}
+.aboutMePic {
+  list-style-type: none;
+  height: 650px;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+.aboutMeText {
+  color: $color3;
+  font-size: 130%;
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  margin: 10;
+}
+
+#ListTestingGallery {
+  display: inline-flex;
+}
+
+// Games Body Section - GamesBody.js Component.
+.GameDisplayBlockMainContainer{
+
+  list-style-type: none;
+  position: relative;
+  height: 1050px;
+  width: 800px;
+  overflow: scroll;
+
+  .GameDisplayBlockImage{
+    height: 100px;
+    width: 100px;
+  }
+
+  .GameDisplayBlockTitle{
+    font-size:20px;
+
+  }
+  .GameDisplayBlockDescription{
+
+    font-size:10px;
+
+  }
+
+  #GameCarouselItem{
+    h1{
+      float:top;
+      
+    }
+  }
+
+}
+
+
+
+
+// Home Body Section - HomeBody.js Component.
+
+// Photos Body Section - PhotosBody.js component.
+#MainBody-Photos {
+  display: inline-block;
+
+  #PhotoBodyClass-containerElement {
+    position: relative;
+    height: 1050px;
+    width: 1060px;
+    overflow: scroll;
+  }
+  #PhotoBodyCarouselContainer {
+    //Needs work
+    margin-bottom: 100px;
+  }
+
+  .PhotoBodyCarouselPicture {
+    height: 500px;
+    width: 1000px;
+  }
+
+  .PhotoUL {
+    list-style-type: none;
+    display: flex;
+    .PhotoPic {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+
+  .DisplayBlockMainContainer {
+    display: flex;
+
+    // PhotoDisplayBlock.js component - Child Component of PhotosBody.js - Located in Components Folder.
+    .DisplayBlockChildContainer {
+      .DisplayBlockTitle {
+        padding-top: 150px;
+
+        color: #fcfcd4;
+        font-size: 50px;
+        text-align: center;
+      }
+      .DisplayBlockImage {
+        padding-right: 50px;
+        padding-left: 50px;
+        height: 250px;
+        width: 400px;
+      }
+      .DisplayBlockButton {
+        background-color: $color3;
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        border-color: #00a8d6;
+        border-radius: 20%;
+
+        height: 30px;
+        width: 100px;
+        display: grid;
+        margin: auto;
+
+        text-align: center;
+      }
+    }
+  }
+}
+
+  // TDModels Body Section - TDModelsBody.js Component.
+
+  #ModelBodyClass-containerElement {
+    position: relative;
+    height: 1050px;
+    width: 1060px;
+    overflow: scroll;
+
+    display:inline-block;
+
+// ModelDisplayBlock.js component - Child Component of TDModelsBody.js - Located in Components Folder.
+    .ModelDisplayBlockMainContainter{
+      display:inline-flex;
+      width:100%;
+    }
+
+    #ModelDisplayBlockUL{
+
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+
+
+      .ModelDisplayBlockImage{
+        padding-right: 50px;
+        padding-left: 50px;
+        height: 250px;
+        width: 300px;
+    
+      }
+
+      .ModelDisplayBlockButton{
+        background-color: $color3;
+        font-size: 50px;
+        text-align: center;
+        color: black;
+        border-color: #00a8d6;
+        border-radius: 20%;
+    
+        height: 100px;
+        width: 200px;
+        margin: auto;
+    
+      }
+    
+  
+      .ModelDisplayBlockTextContainer{
+        padding-left:80px;
+  
+        .ModelDisplayBlockTitle{
+          color:#fcfcd4;
+  
+        }
+        .ModelDisplayBlockDescription{
+          color:#fcfcd4;
+  
+        }
+  
+      
+  
+      }
+
+    }
+
+    
+    
+  }
+
+ 
+
+

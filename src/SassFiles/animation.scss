@@ -1,0 +1,189 @@
+/*Social Media Configs and Animation*/
+$color1: #4cd7f4;
+$color2: #00a8d6;
+$color3: #e2feff;
+$color4: #fcfcd4;
+
+
+//No animations have been implemented yet. These are just placeholder values for reference later.
+#SocialDiv {
+    float: right;
+  }
+  // Social Media buttons + Animations
+
+ 
+.pictureLogo:hover .backDrop:nth-child(1){
+
+    background-color: rgb(50, 68, 231);
+    animation: animate 3s ease-in-out infinite;
+    height: 80px;
+    width: 60px;
+    right:20%;
+   
+    
+}
+
+ .pictureLogo:hover .midDrop:nth-child(2){
+    background-color: rgb(50, 142, 195);
+    animation: animate 10s ease-in-out infinite;
+    height: 80px;
+    width: 60px;
+    right: 20%;
+    
+} 
+
+@keyframes animate{
+    0%, 100%
+    {
+        clip-path: polygon(0% 62%, 9% 49%, 22% 37%, 36% 34%, 
+        48% 39%, 65% 50%, 84% 56%, 100% 41%, 100% 100%, 0% 100%);
+
+    }
+    50%
+    {
+        clip-path: polygon(0 46%, 13% 53%, 26% 59%, 38% 50%,
+         48% 36%, 67% 37%, 83% 44%, 100% 57%, 100% 100%, 0% 100%);
+
+    }
+}
+
+/*Boat and Rocket Logo Config and Animation*/
+
+.SelectorLogo{
+
+    display:block;
+    height:150px;
+    width:150px;
+    align-items: left;
+    
+}
+
+ .SelectorLogo:hover .boatLogo{
+    animation: sailingBoat 3s ease-in-out infinite;
+}
+
+
+@keyframes sailingBoat{
+
+    0%, 50%, 100%{
+        transform: rotate(0deg)
+        translateX(-15px)
+        translateY(5px);
+    }
+    5%,45%{
+        transform: rotate(15deg)
+        translateX(0px)
+       translateY(0px);
+        
+    }
+    10%,40%{
+        transform: rotate(30deg)
+        translateX(15px)
+        translateY(5px);
+    }
+    15%,35%{
+        transform: rotate(15deg)
+        translateX(15px)
+        translateY(-5px);
+    }
+    20%,30%{
+        transform: rotate(0deg)
+        translateX(15px)
+        translateY(5px);
+    }
+    25%{
+        transform: rotate(-15deg)
+        translateX(0px)
+        translateY(0px);
+    }
+    55%, 95%{
+        transform: rotate(-30deg)
+        translateX(15px)
+        translateY(5px);
+    }
+    60%, 90%{
+        transform: rotate(-15deg)
+        translateX(15px)
+        translateY(-5px);
+    }
+    65%, 85%{
+        transform: rotate(-30deg)
+        translateX(15px)
+       translateY(-5px);
+    }
+    70%, 80%{
+        transform: rotate(-15deg)
+        translateX(-15px)
+        translateY(-5px);
+    }
+    75%{
+        transform: rotate(0deg)
+         translateX(-15px)
+         translateY(5px);
+    }
+}
+
+.SelectorLogo:hover .rocketLogo{
+    animation: flyingRocket 3s ease-in-out infinite;
+}
+
+@keyframes flyingRocket{
+    /*1 - 2*/
+    0%, 50%, 100%{
+        transform: rotate(0deg)
+        translateX(-5px)
+        translateY(-15px);
+    }/*2*/
+    5%,45%{
+        transform: rotate(15deg)
+        translateX(0px)
+       translateY(0px);
+        
+    }/*2-3*/
+    10%,40%{
+        transform: rotate(30deg)
+        translateX(-5px)
+        translateY(15px);
+    }/*3-4*/
+    15%,35%{
+        transform: rotate(15deg)
+        translateX(5px)
+        translateY(15px);
+    }/*4-5*/
+    20%,30%{
+        transform: rotate(0deg)
+        translateX(-5px)
+        translateY(-15px);
+    }/*5*/
+    25%{
+        transform: rotate(-15deg)
+        translateX(0px)
+        translateY(0px);
+    }/*5-6*/
+    55%, 95%{
+        transform: rotate(-30deg)
+        translateX(-5px)
+        translateY(-15px);
+    }/*6-7*/
+    60%, 90%{
+        transform: rotate(-15deg)
+        translateX(5px)
+        translateY(-15px);
+    }/*7-8*/
+    65%, 85%{
+        transform: rotate(-30deg)
+        translateX(5px)
+        translateY(15px);
+    }/*8-1*/
+    70%, 80%{
+        transform: rotate(-15deg)
+        translateX(-5px)
+        translateY(15px);
+    }/*1*/
+    75%{
+        transform: rotate(0deg)
+         translateX(0px)
+         translateY(0px);
+    }
+}
+

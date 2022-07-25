@@ -1,0 +1,59 @@
+$color1: #4cd7f4;
+$color2: #00a8d6;
+$color3: #e2feff;
+$color4: #fcfcd4;
+
+// This file serves as the Nav bar on the left side of the site. Currently only used by buttons.
+
+
+$picsize: 50px;
+// Main Div Container for Navigation bar and Body content - App.js Component.
+#NavBodyDiv {
+    position: fixed;
+    background-color: $color2;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    display: inline-block;
+    z-index: -1;
+    
+    
+    //Left Nav Bar
+    #MainLeftNav {
+      height: 100%;
+      width: 10%;
+      //background: $color2;
+      float: left;
+      position:relative;
+  
+    }
+    #NavBarContainer{
+        background-color: #00a8d6;
+      width:10%;// currently at zero to prevent main body from disapearing.
+      .NavButtonsList{
+        padding-top:10px;
+      }
+    }
+  
+    .NavButtons {
+      background-color: $color3;
+      color: black;
+      border-color: #00a8d6;
+      border-radius: 20%;
+      
+      padding-top:0.1%;
+      height: 50px;
+      width: 150px;
+    }
+}
+
+.NavButtons {
+    //background-color: $color3;
+    color: black;
+    border-color: #00a8d6;
+    border-radius: 20%;
+    
+    padding-top:0.1%;
+    height: 50px;
+    width: 150px;
+  }

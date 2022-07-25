@@ -1,0 +1,26 @@
+[
+    {
+        "id": "block0",
+        "title": "Example Game 0",
+        "description": "This is the description for Game 0",
+        "image": "Reference to Image"
+    },
+    {
+        "id": "block1",
+        "title": "Example Game 1",
+        "description": "This is the description for Game 1",
+        "image": "Reference to Image"
+    },
+    {
+        "id": "block2",
+        "title": "Example Game 2",
+        "description": "This is the description for Game 2",
+        "image": "Reference to Image"
+    },
+    {
+        "id": "block3",
+        "title": "Example Game 3",
+        "description": "This is the description for Game 3",
+        "image": "Reference to Image"
+    }
+]

@@ -1,0 +1,35 @@
+@import 'header';
+@import 'navbar';
+@import 'body';
+@import 'animation';
+@import 'footer';
+
+$color1: #4cd7f4;
+$color2: #00a8d6;
+$color3: #e2feff;
+$color4: #fcfcd4;
+
+// This file serves as a Central import located for all SCSS files as well as the CSS generator file 
+// used with the --watch command provided by SASS.
+
+// Also serves as some default values.
+
+
+$picsize: 50px;
+
+* {
+    padding: 0;
+    margin: 0%;
+    
+  }
+  .App {
+    h1 {
+      font-size: 40px;
+      color:#fcfcd4;
+    }
+    p{
+      color:#fcfcd4;
+    }
+  }
+
+

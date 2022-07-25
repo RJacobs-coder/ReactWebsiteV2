@@ -1,0 +1,59 @@
+[
+  {
+    "id": "block0",
+    "name": "aboutMeText1",
+    "title": "Introduction",
+    "image": "../artassets/aboutMePictures/bridge.jpg",
+    "content": "Good Day All! My name is Robert Jacobs and I am a British Native currently living in Taiwan. I left England in 2011 and have bounced between Taiwan (Kaohsiung) and Australia (Perth) ever since and have been pursuing many different projects but have finally chosen my main career path going into the future. My goal is to work in a remote capacity so that I can achieve my other goals which include (but not limited to) traveling around Taiwan and the world at large. Sailing, snorkeling and fishing in the lovely places I travel too as well as meeting lovely people along the way. I am to have more flexibility in my life and to maintain a sustainable work life balance where I can throw myself 1000% into a project as a career but still have time to enjoy the limited time I have left this world. I believe in having a reliable and unfaltering work ethic and to put everything you have into something is important and should be encouraged but I also value being able to take a step back and watch your mental health in order to sustain the same level of productivity to be the most reliable and valued workers every single day you are providing a service."
+  },
+
+  {
+    "id": "block1",
+    "name": "aboutMeText2",
+    "title": "Pursing a New Career",
+    "image": "./src/artassets/aboutMePictures/bubbles.jpg",
+    "content": "Currently have experience in Tech Support but learning some skills. Starting a Degree in Cyber Security soon. Previously I have been working in Hospitality, sales, education but although have enjoyed all of those jobs I have decided to move into the tech industry as either in tech support or programming. I came to the conclusion that to achieve all the other goals I have set out for myself and the recent state of the world that working in a remote capacity would be the most sustainable and stable way to pursue my other interests which is why I am moving in this direction. I enjoy helping others most of all which is why I want to move into tech support but I also have a passion for programming and Cyber Security and although They are different disciplines. I believe they have a lot of overlap and will allow me to branch out into different directions as the opportunities arise."
+  },
+  {
+    "id": "block2",
+    "name": "aboutMeText3",
+    "title": "Learning Coding",
+    "image": "./src/artassets/aboutMePictures/disney.jpg",
+    "content": "My tech journey started early 2019 when I went to Australia for the Second time to achieve a Diploma in Software Development. I chose Australia because it was close to my home of Taiwan and also an English Speaking country where I can study without the barrier of language that prevents me from getting everything I can out of the course. Through hard work, perseverance and grit I managed to complete my goal of getting the Diploma even though I was paying International Fees, on a student visa, working part time and during the entirety of a pandemic.I needed to return to Taiwan early and being unable to even start my Cyber Security degree in Australia which was the original intent of going there in the first place. Although saddened to leave all the friends I made in Australia I felt at the time it was too risky to continue studying under the higher fees especially when the state of the world was in such a crazy place I felt it was necessary to take the safe route and return to Taiwan to regroup."
+  },
+  {
+    "id": "block3",
+    "name": "aboutMeText4",
+    "title": "Learning Photo and Video Editing.",
+    "image": "./src/artassets/aboutMePictures/fishing.jpg",
+    "content": "When I returned to Taiwan I went back to work as an English Teacher in the local cram schools and although the job paid well and was sustainable this is not the path I wanted to take so when an opportunity to work at an international school as a ICT Teacher / Tech Support worker came up I was overjoyed and only 4 months after completing  I got my first ICT role at a local school. The main job requirements were to teach lower elementary IT as well as provide tech support for all the students and staff  around the school but it did give me the opportunity to learn how to Photo and Video edit for the schools advertisements and internal communications. Now I have a great grasp on creating custom designs and editing long form videos using Open Source software such as GIMP and Blender."
+  },
+  {
+    "id": "block4",
+    "name": "aboutMeText5",
+    "title": "Learning 3D Modling",
+    "image": "./src/artassets/aboutMePictures/london.jpg",
+    "content": "I was introduced to Blender through needing a free and open source video editor for my work at the school. This led me down the rabbit hole of creating custom 3D assets for my own use in other projects. 3D modeling is more of a hobby at the moment rather than a serious career path but the skills learnt here  will carry me in some pretty interesting direction such as when I wish to create video games in the 3d or 2d space  and generally bolstering my skills in art and creative design will help me elsewhere such as with website UI design, photo editing or making video games."
+  },
+  {
+    "id": "block5",
+    "name": "aboutMeText6",
+    "title": "Video Game Development using Javascript and Rust",
+    "image": "./src/artassets/aboutMePictures/snorkling.jpg",
+    "content": "I began my tech journey in the realm of Programming and enjoy the process of  establishing a gap or an issue in the way things are done either at home or at work and creating a solution for such problems. I started programming using C#, Java, HTML, CSS, PHP but currently evolving that skill set to include the REACT framework for Web Design and Rust for desktop applications. Although I enjoyed my time using Java and C# during my studies as time has gone on I have felt that Java is a little too verbose for my liking and with me switching from Windows to Linux (Arch) I have felt that C# is not very well supported on this platform. This is why RUST being a newer language and gaining more support on every platform is very exciting to start learning. There are game engines and web API that also supports RUST so that will be my main language of choice moving forward. As for right now in my career I have chosen to focus the majority of my time in Web Development using the REACT framework since it has a wealth of support and is in quite heavy demand at the moment."
+  },
+  {
+    "id": "block6",
+    "name": "aboutMeText7",
+    "title": "Open To Freelance!",
+    "image": "./src/artassets/aboutMePictures/StudentAward.jpg",
+    "content": "Although I am flexible on what kind of opportunities I will discuss and accept the main focus of my life would be more down the route of remote / freelance work in the web development or tech support space (I have a lot of experience with Windows and Mac but currently running Linux daily). With this in mind I would also like to extend an invitation for me to work on other projects using my other skill sets such as photo/video editing, 3D Modeling, game design, UI/UX design as well as proof reading English Documentation. I am willing to learn new skills and re-focus my efforts on other areas depending on what opportunities arise but I am currently not looking for work that relates to teaching or sales (either remote or in person) due to me already working in those industries for a number of years and currently am committed to making a full switch over to a different career."
+  },
+  {
+    "id": "block7",
+    "name": "aboutMeText8",
+    "title": "How to reach me",
+    "image": "./src/artassets/aboutMePictures/traveling.jpg",
+    "content": "Thank you for visiting the site and taking the time to learn more about me and the journey I am on with my career change. The best way to contact me is through my email / linkedin / lineID and I will try to reply to anyone that drops me a message. All the best and hope to hear from you soon."
+  }
+]
