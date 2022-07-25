@@ -25,68 +25,85 @@ const Gallery = () => {
   return (
     <Carousel cols={1} rows={1} gap={10} loop>
       <Carousel.Item>
+        <div className="ListTestingDivider">
         <ul id="ListTestingGallery">
           <li>
             <img className="aboutMePic" src={picArray[0]}></img>
           </li>
           <li>{TEXTASSETS[0]}</li>
         </ul>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
+
+      <div className="ListTestingDivider">
         <ul id="ListTestingGallery">
           <li>{TEXTASSETS[1]}</li>
           <li>
             <img className="aboutMePic" src={picArray[1]}></img>
           </li>
         </ul>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
+      <div className="ListTestingDivider">
         <ul id="ListTestingGallery">
           <li>
             <img className="aboutMePic" src={picArray[2]}></img>
           </li>
           <li>{TEXTASSETS[2]}</li>
         </ul>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
+      <div className="ListTestingDivider">
         <ul id="ListTestingGallery">
           <li>{TEXTASSETS[3]}</li>
           <li>
             <img className="aboutMePic" src={picArray[3]}></img>
           </li>
         </ul>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
+      <div className="ListTestingDivider">
         <ul id="ListTestingGallery">
           <li>
             <img className="aboutMePic" src={picArray[4]}></img>
           </li>
           <li>{TEXTASSETS[4]}</li>
         </ul>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
+      <div className="ListTestingDivider">
         <ul id="ListTestingGallery">
           <li>{TEXTASSETS[5]}</li>
           <li>
             <img className="aboutMePic" src={picArray[5]}></img>
           </li>
         </ul>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
+      <div className="ListTestingDivider">
         <ul id="ListTestingGallery">
           <li>
             <img className="aboutMePic" src={picArray[6]}></img>
           </li>
           <li>{TEXTASSETS[6]}</li>
         </ul>
+        </div>
       </Carousel.Item>
       <Carousel.Item>
+      <div className="ListTestingDivider">
         <ul id="ListTestingGallery">
           <li>{TEXTASSETS[7]}</li>
           <li>
             <img className="aboutMePic" src={picArray[7]}></img>
           </li>
         </ul>
+        </div>
       </Carousel.Item>
     </Carousel>
   );

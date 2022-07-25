@@ -11,6 +11,7 @@
 #MainHeader #MainTitle #MainHeaderTitle {
   color: #00a8d6;
   font-size: 75px;
+  background-color: #fcfcd4;
 }
 #MainHeader #SocialDiv {
   float: right;
@@ -22,6 +23,7 @@
   padding: 0;
   right: 0px;
   top: 0px;
+  background: none;
 }
 #MainHeader #SocialList a {
   display: inline-block;
@@ -29,16 +31,19 @@
 #MainHeader .Socials {
   display: flex;
   flex-direction: row;
+  background: #fcfcd4;
 }
 #MainHeader .Socials .pictureWindow {
   height: 50px;
   width: 50px;
-  z-index: 4;
+  z-index: 2;
+  background: none;
 }
 #MainHeader .Socials .pictureLogo {
   height: 50px;
   width: 50px;
   position: absolute;
+  background: none;
   z-index: 2;
 }
 #MainHeader .Socials .backDrop {
@@ -46,24 +51,22 @@
   width: 50px;
   border-radius: 50%;
   position: absolute;
-  z-index: 1;
+  background: none;
 }
 #MainHeader .Socials .midDrop {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   position: absolute;
-  z-index: 3;
+  background: none;
 }
 
 #NavBodyDiv {
   position: fixed;
-  background-color: #00a8d6;
   height: 100%;
   width: 100%;
   padding-top: 100px;
   display: inline-block;
-  z-index: -1;
 }
 #NavBodyDiv #MainLeftNav {
   height: 100%;
@@ -72,7 +75,6 @@
   position: relative;
 }
 #NavBodyDiv #NavBarContainer {
-  background-color: #00a8d6;
   width: 10%;
 }
 #NavBodyDiv #NavBarContainer .NavButtonsList {
@@ -100,18 +102,26 @@
 .MainBody {
   padding-left: 15%;
   padding-bottom: 0%;
-  background-color: #00a8d6;
   top: 100px;
   position: absolute;
   float: right;
+  width: 1050px;
   z-index: -1;
-  max-width: 80%;
+  max-width: 1050px;
   width: 100%;
   list-style-type: none;
 }
 
 .ListTestingGallery {
   list-style-type: none;
+}
+
+.ListTestingDivider {
+  background: rgba(255, 255, 255, 0.47);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5.1px);
 }
 
 .aboutMePic {
@@ -123,7 +133,7 @@
 }
 
 .aboutMeText {
-  color: #e2feff;
+  color: #00a8d6;
   font-size: 130%;
   list-style-type: none;
   height: 100%;
@@ -135,24 +145,65 @@
   display: inline-flex;
 }
 
-.GameDisplayBlockMainContainer {
-  list-style-type: none;
+.GameBodyMainContainer {
+  width: 1000px;
+  display: block;
+}
+.GameBodyMainContainer #GameBodyClass-containerElement {
   position: relative;
   height: 1050px;
-  width: 800px;
+  width: 900px;
   overflow: scroll;
 }
-.GameDisplayBlockMainContainer .GameDisplayBlockImage {
+.GameBodyMainContainer #GameBodyClass-containerElement .GameBodyUL {
+  width: 1000;
+  height: 200px;
+  list-style-type: none;
+  padding-bottom: 5%;
+  display: inline-flex;
+}
+.GameBodyMainContainer #GameBodyClass-containerElement .GameBodyUL .GameBodyLI {
+  width: 100px;
+  padding-left: 10%;
+  padding-right: 20%;
+}
+.GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer {
+  list-style-type: none;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin-top: 10%;
+  background: rgba(255, 255, 255, 0.47);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(5.1px);
+}
+.GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockImage {
   height: 100px;
   width: 100px;
+  padding-left: 25%;
 }
-.GameDisplayBlockMainContainer .GameDisplayBlockTitle {
+.GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockTitle {
   font-size: 20px;
+  padding-left: 10%;
 }
-.GameDisplayBlockMainContainer .GameDisplayBlockDescription {
+.GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockDescription {
   font-size: 10px;
+  padding-left: 10%;
 }
-.GameDisplayBlockMainContainer #GameCarouselItem h1 {
+.GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockButton {
+  background-color: #e2feff;
+  font-size: 15px;
+  text-align: center;
+  color: black;
+  border-color: #00a8d6;
+  border-radius: 20%;
+  height: 30px;
+  width: 100px;
+  margin: auto;
+  margin-left: 20%;
+  text-align: center;
   float: top;
 }
 
@@ -162,7 +213,7 @@
 #MainBody-Photos #PhotoBodyClass-containerElement {
   position: relative;
   height: 1050px;
-  width: 1060px;
+  width: 1050px;
   overflow: scroll;
 }
 #MainBody-Photos #PhotoBodyCarouselContainer {
@@ -171,6 +222,11 @@
 #MainBody-Photos .PhotoBodyCarouselPicture {
   height: 500px;
   width: 1000px;
+  background: rgba(255, 255, 255, 0.47);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  border-radius: 30%;
+  -webkit-backdrop-filter: blur(5.1px);
 }
 #MainBody-Photos .PhotoUL {
   list-style-type: none;
@@ -182,9 +238,16 @@
 }
 #MainBody-Photos .DisplayBlockMainContainer {
   display: flex;
+  padding-bottom: 5%;
+}
+#MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer {
+  background: rgba(255, 255, 255, 0.47);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.1px);
+  border-radius: 20%;
+  -webkit-backdrop-filter: blur(5.1px);
 }
 #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer .DisplayBlockTitle {
-  padding-top: 150px;
   color: #fcfcd4;
   font-size: 50px;
   text-align: center;
@@ -212,7 +275,7 @@
 #ModelBodyClass-containerElement {
   position: relative;
   height: 1050px;
-  width: 1060px;
+  width: 1050px;
   overflow: scroll;
   display: inline-block;
 }
@@ -375,10 +438,409 @@
   position: absolute;
 }
 #Footer h1 {
+  background: none;
   color: #00a8d6;
   font-size: 20px;
 }
+#Footer #FooterList {
+  background: none;
+}
+#Footer #FooterList .FooterItems {
+  background: none;
+}
+#Footer #FooterList .FooterItems a {
+  background: none;
+}
 
+body {
+  background: linear-gradient(-45deg, #327c97, #23a6d5, #4cd7f4, #abd8e9);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 2000px;
+  width: 2000px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 25%;
+  }
+  25% {
+    background-position: 25% 50%;
+  }
+  50% {
+    background-position: 50% 75%;
+  }
+  75% {
+    background-position: 75% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+.waves {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  transform: rotate(90deg);
+}
+
+.wave {
+  --wave-color: var($color3);
+  --wave-tail-length: 500px;
+  --wave-tail-height: 1000px;
+  --wave-width: calc(var(--wave-tail-length) / 6);
+  --fall-duration: 5s;
+  --tail-fade-duration: var(--fall-duration);
+  position: fixed;
+  top: var(--top-offset);
+  left: 0;
+  width: var(--wave-tail-length);
+  height: var(--wave-tail-height);
+  color: var(#e2feff);
+  background: linear-gradient(90deg, #e2feff, transparent);
+  border-radius: 50%;
+  transform: translate3d(104em, 0, 0);
+  animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+}
+.wave:nth-child(1) {
+  --wave-tail-length: 8.39em;
+  --top-offset: 7.61vh;
+  --fall-duration: 13.416s;
+  --fall-delay: 97.181s;
+}
+.wave:nth-child(2) {
+  --wave-tail-length: 5.52em;
+  --top-offset: 6.92vh;
+  --fall-duration: 9.885s;
+  --fall-delay: 4.755s;
+}
+.wave:nth-child(3) {
+  --wave-tail-length: 5.62em;
+  --top-offset: 7.45vh;
+  --fall-duration: 14.165s;
+  --fall-delay: 33.203s;
+}
+.wave:nth-child(4) {
+  --wave-tail-length: 4.03em;
+  --top-offset: 6.9vh;
+  --fall-duration: 9.286s;
+  --fall-delay: 19.683s;
+}
+.wave:nth-child(5) {
+  --wave-tail-length: 9.22em;
+  --top-offset: 7.59vh;
+  --fall-duration: 17.529s;
+  --fall-delay: 40.817s;
+}
+.wave:nth-child(6) {
+  --wave-tail-length: 6.65em;
+  --top-offset: 5.08vh;
+  --fall-duration: 14.106s;
+  --fall-delay: 48.881s;
+}
+.wave:nth-child(7) {
+  --wave-tail-length: 5.83em;
+  --top-offset: 8.73vh;
+  --fall-duration: 17.803s;
+  --fall-delay: 71.432s;
+}
+.wave:nth-child(8) {
+  --wave-tail-length: 6.61em;
+  --top-offset: 3.36vh;
+  --fall-duration: 8.518s;
+  --fall-delay: 65.516s;
+}
+.wave:nth-child(9) {
+  --wave-tail-length: 5.77em;
+  --top-offset: 6.86vh;
+  --fall-duration: 18.455s;
+  --fall-delay: 94.841s;
+}
+.wave:nth-child(10) {
+  --wave-tail-length: 3.41em;
+  --top-offset: 4.26vh;
+  --fall-duration: 16.139s;
+  --fall-delay: 63.239s;
+}
+.wave:nth-child(11) {
+  --wave-tail-length: 8.58em;
+  --top-offset: 1.14vh;
+  --fall-duration: 17.519s;
+  --fall-delay: 76.204s;
+}
+.wave:nth-child(12) {
+  --wave-tail-length: 4.66em;
+  --top-offset: 2.22vh;
+  --fall-duration: 14.272s;
+  --fall-delay: 21.336s;
+}
+.wave:nth-child(13) {
+  --wave-tail-length: 9.29em;
+  --top-offset: 2.76vh;
+  --fall-duration: 7.592s;
+  --fall-delay: 37.225s;
+}
+.wave:nth-child(14) {
+  --wave-tail-length: 9.54em;
+  --top-offset: 0.94vh;
+  --fall-duration: 6.759s;
+  --fall-delay: 73.69s;
+}
+.wave:nth-child(15) {
+  --wave-tail-length: 5.18em;
+  --top-offset: 8.66vh;
+  --fall-duration: 14.645s;
+  --fall-delay: 57.945s;
+}
+.wave:nth-child(16) {
+  --wave-tail-length: 3.16em;
+  --top-offset: 2.31vh;
+  --fall-duration: 15.643s;
+  --fall-delay: 64.486s;
+}
+.wave:nth-child(17) {
+  --wave-tail-length: 5.91em;
+  --top-offset: 9.2vh;
+  --fall-duration: 17.087s;
+  --fall-delay: 54.128s;
+}
+.wave:nth-child(18) {
+  --wave-tail-length: 3.48em;
+  --top-offset: 6.6vh;
+  --fall-duration: 7.32s;
+  --fall-delay: 3.007s;
+}
+.wave:nth-child(19) {
+  --wave-tail-length: 9.06em;
+  --top-offset: 9.23vh;
+  --fall-duration: 16.64s;
+  --fall-delay: 35.762s;
+}
+.wave:nth-child(20) {
+  --wave-tail-length: 9.75em;
+  --top-offset: 9.33vh;
+  --fall-duration: 14.856s;
+  --fall-delay: 40.27s;
+}
+.wave:nth-child(21) {
+  --wave-tail-length: 8.62em;
+  --top-offset: 2.83vh;
+  --fall-duration: 16.104s;
+  --fall-delay: 29.899s;
+}
+.wave:nth-child(22) {
+  --wave-tail-length: 8.23em;
+  --top-offset: 8.35vh;
+  --fall-duration: 14.269s;
+  --fall-delay: 67.819s;
+}
+.wave:nth-child(23) {
+  --wave-tail-length: 9.73em;
+  --top-offset: 2.44vh;
+  --fall-duration: 8.007s;
+  --fall-delay: 74.885s;
+}
+.wave:nth-child(24) {
+  --wave-tail-length: 3.13em;
+  --top-offset: 3.05vh;
+  --fall-duration: 11.812s;
+  --fall-delay: 15.735s;
+}
+.wave:nth-child(25) {
+  --wave-tail-length: 5.34em;
+  --top-offset: 6.11vh;
+  --fall-duration: 8.434s;
+  --fall-delay: 73.145s;
+}
+.wave:nth-child(26) {
+  --wave-tail-length: 4.53em;
+  --top-offset: 6.04vh;
+  --fall-duration: 17.276s;
+  --fall-delay: 4.173s;
+}
+.wave:nth-child(27) {
+  --wave-tail-length: 8.24em;
+  --top-offset: 4.02vh;
+  --fall-duration: 10.934s;
+  --fall-delay: 56.866s;
+}
+.wave:nth-child(28) {
+  --wave-tail-length: 7.91em;
+  --top-offset: 2vh;
+  --fall-duration: 10.06s;
+  --fall-delay: 49.352s;
+}
+.wave:nth-child(29) {
+  --wave-tail-length: 6.13em;
+  --top-offset: 8.46vh;
+  --fall-duration: 7.071s;
+  --fall-delay: 19.889s;
+}
+.wave:nth-child(30) {
+  --wave-tail-length: 6.39em;
+  --top-offset: 3.03vh;
+  --fall-duration: 17.973s;
+  --fall-delay: 14.466s;
+}
+.wave:nth-child(31) {
+  --wave-tail-length: 3.61em;
+  --top-offset: 1.99vh;
+  --fall-duration: 11.622s;
+  --fall-delay: 97.995s;
+}
+.wave:nth-child(32) {
+  --wave-tail-length: 10.03em;
+  --top-offset: 3.03vh;
+  --fall-duration: 14.07s;
+  --fall-delay: 64.698s;
+}
+.wave:nth-child(33) {
+  --wave-tail-length: 7.32em;
+  --top-offset: 0.76vh;
+  --fall-duration: 17.547s;
+  --fall-delay: 12.792s;
+}
+.wave:nth-child(34) {
+  --wave-tail-length: 5.18em;
+  --top-offset: 3.22vh;
+  --fall-duration: 9.106s;
+  --fall-delay: 78.869s;
+}
+.wave:nth-child(35) {
+  --wave-tail-length: 7.49em;
+  --top-offset: 9.01vh;
+  --fall-duration: 12.733s;
+  --fall-delay: 57.57s;
+}
+.wave:nth-child(36) {
+  --wave-tail-length: 9.18em;
+  --top-offset: 1.62vh;
+  --fall-duration: 6.469s;
+  --fall-delay: 39.032s;
+}
+.wave:nth-child(37) {
+  --wave-tail-length: 6.7em;
+  --top-offset: 3vh;
+  --fall-duration: 16.687s;
+  --fall-delay: 46.78s;
+}
+.wave:nth-child(38) {
+  --wave-tail-length: 9.23em;
+  --top-offset: 4.37vh;
+  --fall-duration: 7.31s;
+  --fall-delay: 74.662s;
+}
+.wave:nth-child(39) {
+  --wave-tail-length: 6.29em;
+  --top-offset: 3.82vh;
+  --fall-duration: 17.942s;
+  --fall-delay: 82.901s;
+}
+.wave:nth-child(40) {
+  --wave-tail-length: 7.72em;
+  --top-offset: 7.38vh;
+  --fall-duration: 11.814s;
+  --fall-delay: 95.274s;
+}
+.wave:nth-child(41) {
+  --wave-tail-length: 7.42em;
+  --top-offset: 0.85vh;
+  --fall-duration: 14.535s;
+  --fall-delay: 23.515s;
+}
+.wave:nth-child(42) {
+  --wave-tail-length: 7.35em;
+  --top-offset: 9.62vh;
+  --fall-duration: 15.152s;
+  --fall-delay: 68.165s;
+}
+.wave:nth-child(43) {
+  --wave-tail-length: 6.18em;
+  --top-offset: 2.48vh;
+  --fall-duration: 18.062s;
+  --fall-delay: 35.109s;
+}
+.wave:nth-child(44) {
+  --wave-tail-length: 5.39em;
+  --top-offset: 0.73vh;
+  --fall-duration: 8.829s;
+  --fall-delay: 80.593s;
+}
+.wave:nth-child(45) {
+  --wave-tail-length: 9.97em;
+  --top-offset: 5.62vh;
+  --fall-duration: 11.647s;
+  --fall-delay: 42.536s;
+}
+.wave:nth-child(46) {
+  --wave-tail-length: 4.21em;
+  --top-offset: 9.93vh;
+  --fall-duration: 10.275s;
+  --fall-delay: 50.307s;
+}
+.wave:nth-child(47) {
+  --wave-tail-length: 4.38em;
+  --top-offset: 9.66vh;
+  --fall-duration: 8.49s;
+  --fall-delay: 40.214s;
+}
+.wave:nth-child(48) {
+  --wave-tail-length: 7.79em;
+  --top-offset: 4.63vh;
+  --fall-duration: 8.912s;
+  --fall-delay: 57.612s;
+}
+.wave:nth-child(49) {
+  --wave-tail-length: 5.03em;
+  --top-offset: 0.98vh;
+  --fall-duration: 11.535s;
+  --fall-delay: 40.427s;
+}
+.wave:nth-child(50) {
+  --wave-tail-length: 4.47em;
+  --top-offset: 2.88vh;
+  --fall-duration: 9.902s;
+  --fall-delay: 60.016s;
+}
+.wave::before, .wave::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: calc(var(--wave-width) / -2);
+  width: var(--wave-width);
+  height: 100%;
+  border-radius: inherit;
+  animation: blink 2s linear infinite;
+}
+.wave::before {
+  transform: rotate(45deg);
+}
+.wave::after {
+  transform: rotate(-45deg);
+}
+
+@keyframes fall {
+  to {
+    transform: translate3d(-30em, 0, 0);
+  }
+}
+@keyframes tail-fade {
+  0%, 25% {
+    width: var(--wave-tail-length);
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0.6;
+  }
+}
 * {
   padding: 0;
   margin: 0%;

@@ -1,0 +1,126 @@
+$color1: #4cd7f4;
+$color2: #00a8d6;
+$color3: #e2feff;
+$color4: #fcfcd4;
+
+body {
+
+  background: linear-gradient(-45deg, #327c97, #23a6d5, #4cd7f4, #abd8e9);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 2000px;
+  width: 2000px;
+}
+
+// Background Gradient Animation.
+@keyframes gradient {
+  0% {
+    background-position: 0% 25%;
+  }
+  25% {
+    background-position: 25% 50%;
+  }
+  50% {
+    background-position: 50% 75%;
+  }
+  75% {
+    background-position: 75% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+// Random Number to position Waves.
+@function random_range($min, $max) {
+  $rand: random();
+  $random_range: $min + floor($rand * (($max - $min) + 5));
+  @return $random_range;
+}
+
+// Div container that contains all the individual waves.
+.waves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    transform: rotate(90deg);
+}
+
+
+
+// Each light colored element is called a wave. These move up the screen.
+.wave {
+  $wave-count: 50;
+  --wave-color: var($color3);
+  --wave-tail-length: 500px;
+  --wave-tail-height: 1000px;
+  --wave-width: calc(var(--wave-tail-length) / 6);
+  --fall-duration: 5s; //Speed of animation.
+  --tail-fade-duration: var(--fall-duration);
+
+  position: fixed;
+  top: var(--top-offset);
+  left: 0;
+  width: var(--wave-tail-length);
+  height: var(--wave-tail-height);
+  color: var($color3);
+  background: linear-gradient(90deg, $color3, transparent);
+  border-radius: 50%;
+  transform: translate3d(104em, 0, 0);
+  animation: fall var(--fall-duration) var(--fall-delay) linear infinite,
+    tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+
+  @for $i from 1 through $wave-count {
+    &:nth-child(#{$i}) {
+      --wave-tail-length: #{random_range(300em, 1000em) / 100};
+      --top-offset: #{random_range(0vh, 1000vh) / 100};
+      --fall-duration: #{random_range(6000, 20000s) / 1000};
+      --fall-delay: #{random_range(0, 100000s) / 1000};
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: calc(var(--wave-width) / -2);
+    width: var(--wave-width);
+    height: 100%;
+    border-radius: inherit;
+    animation: blink 2s linear infinite;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes fall {
+  to {
+    transform: translate3d(-30em, 0, 0);
+  }
+}
+
+@keyframes tail-fade {
+  0%, 25% {
+    width: var(--wave-tail-length);
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.6;
+  }
+}

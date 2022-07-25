@@ -5,7 +5,7 @@ $color4: #fcfcd4;
 
 $picsize: 50px;
 
-// This file serves as the main Body Styling. This includes all the different Components that will be 
+// This file serves as the main Body Styling. This includes all the different Components that will be
 //swapped out but occupy the same space below the Header and to the right of the Nav Buttons.
 
 //Main Header - Header.js Component Located in /src/LayoutComponents
@@ -15,15 +15,15 @@ $picsize: 50px;
   position: absolute;
   height: 100px;
   width: 100%;
-  
+
   #MainTitle {
     display: inline-block;
     padding-bottom: 0%;
-    
-    
+
     #MainHeaderTitle {
       color: $color2;
       font-size: 75px;
+      background-color: $color4;
     }
   }
 
@@ -40,24 +40,28 @@ $picsize: 50px;
     padding: 0;
     right: 0px;
     top: 0px;
+    background: none;
     a {
       display: inline-block;
     }
-    
   }
   .Socials {
     display: flex;
     flex-direction: row;
+    background: $color4;
 
     .pictureWindow {
       height: $picsize;
       width: $picsize;
-      z-index: 4;
+      z-index: 2;
+      background: none;
     }
     .pictureLogo {
       height: $picsize;
       width: $picsize;
       position: absolute;
+      background: none;
+
       z-index: 2;
     }
     .backDrop {
@@ -65,14 +69,14 @@ $picsize: 50px;
       width: $picsize;
       border-radius: 50%;
       position: absolute;
-      z-index: 1;
+      background: none;
     }
     .midDrop {
       height: $picsize;
       width: $picsize;
       border-radius: 50%;
       position: absolute;
-      z-index: 3;
+      background: none;
     }
   }
 }

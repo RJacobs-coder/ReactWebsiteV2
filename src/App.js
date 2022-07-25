@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import { Header } from "./LayoutComponents/Header";
 import { Footer } from "./LayoutComponents/Footer";
@@ -7,13 +7,9 @@ import { HomeBody } from "./LayoutComponents/BodyComponents/HomeBody";
 import { AboutMeBody } from "./LayoutComponents/BodyComponents/AboutMeBody";
 import GamesBody from "./LayoutComponents/BodyComponents/GamesBody";
 import PhotosBody from "./LayoutComponents/BodyComponents/PhotosBody";
-import TDModelsBody  from "./LayoutComponents/BodyComponents/TDModelsBody";
-
-
+import TDModelsBody from "./LayoutComponents/BodyComponents/TDModelsBody";
 
 function App() {
-
-
   // Maintains Current State or Selection of which body is to be presented.
   const [currentBody, setBody] = useState("");
   console.log("Initial Set - " + currentBody);
@@ -29,17 +25,16 @@ function App() {
     <AboutMeBody></AboutMeBody>,
     <GamesBody></GamesBody>,
     <PhotosBody></PhotosBody>,
-    <TDModelsBody></TDModelsBody>
+    <TDModelsBody></TDModelsBody>,
   ];
 
   // Keeps track of which Body is currently selected.
   let currentState = currentBody;
   console.log("Current State - " + currentState);
 
-
   //Organises which Index of the bodyArray is Selected based on Button CLicks.
   let currentSelection;
-  for(let i = 0; i < bodyArray.length; i++){
+  for (let i = 0; i < bodyArray.length; i++) {
     if (currentState === bodyValues[i]) {
       currentSelection = bodyArray[i];
     }
@@ -54,7 +49,7 @@ function App() {
   };
 
   // Creates Multiple Buttons with unique ID's and puts them all into an array.
-  for (var i = 0; i < buttonValues.length; i++) {
+  for (let i = 0; i < buttonValues.length; i++) {
     buttonArray.push(
       <button
         className="NavButtons"
@@ -68,29 +63,31 @@ function App() {
   }
 
   // Takes the button array and puts them all into a list.
-  var listButtons = buttonArray.map((buttons) => (
-    <li
-      className="NavButtonsList"
-      id={buttons.id + "Li"}
-      key={buttons.id}
-    >
+  let listButtons = buttonArray.map((buttons) => (
+    <li className="NavButtonsList" id={buttons.id + "Li"} key={buttons.id}>
       {buttons}
     </li>
   ));
 
+  // Wave animation elements for background.
+  let numberofWaves = 5;
+  let waveArray = [];
+  for (let i = 0; i < numberofWaves; i++) {waveArray.push(<div className="wave"></div>);}
+  let printWaves = waveArray.map((items) => items);
+
   return (
     <div className="App">
       <Header></Header>
-    
-
-    <div id="NavBodyDiv">
-    <div id="NavBarContainer">
-      <ul id="LeftNavButtonList">{listButtons}</ul>
-      
-    </div>
-    <div className="MainBody" id={"MainBody-" + currentBody}>{currentSelection}</div>
-
-    </div>
+      <div className="waves">{printWaves}</div>
+      <div id="NavBodyDiv">
+        <div id="NavBarContainer">
+          <ul id="LeftNavButtonList">{listButtons}</ul>
+        </div>
+        <div className="MainBody" id={"MainBody-" + currentBody}>
+          {currentSelection}
+        </div>
+        
+      </div>
 
       <Footer></Footer>
     </div>

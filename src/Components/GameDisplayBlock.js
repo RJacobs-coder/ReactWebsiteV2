@@ -25,6 +25,7 @@ class GameDisplayBlock extends React.Component {
       <li className={label+"LI"}><img className={label+"Image"} src={pic}></img></li>
       <li className={label+"LI"}><h1 className={label+"Title"}>{title}</h1></li>
       <li className={label+"LI"}><p className={label+"Description"}>{desc}</p></li>
+      <li className={label+"LI"}><button className={label+"Button"}>Play</button></li>
     </div>
     );
   }

@@ -15,11 +15,8 @@ import pic3 from "../../ArtAssets/artAssets/ExamplePhotos/example3.jpg";
 
 import textCollect from "../../TextAssets/gameTitles.json";
 
-
 //Current does not work. Intention was to have a Scrolling Element to display the different
-//Game options inside a Carousel. The Carousel would activate when a game is chosen. 
-
-
+//Game options inside a Carousel. The Carousel would activate when a game is chosen.
 
 // Variables for Scrolling functionality.
 let Element = Scroll.Element;
@@ -112,16 +109,18 @@ class GamesBody extends React.Component {
     const label = "GameBody";
 
     return (
-      <div>
+      <div className={label + "MainContainer"}>
         <h1>
           This is where all the Games will go. This is just a placeholder.
         </h1>
-
-        
-
-     
-        <Carousel id="GameBodyCarousel" cols={1} rows={1} gap={10}>
-          <Carousel.Item id="MainCarouselItem">
+        <Carousel
+          id="PhotoBodyCarouselContainer"
+          cols={1}
+          rows={1}
+          gap={10}
+          loop
+        >
+          <Carousel.Item>
             <Element // Main Container Element. Defines the borders on the scrolling.
               name="GameBodyClassContainerElement"
               className="element"
@@ -136,13 +135,259 @@ class GamesBody extends React.Component {
                       sendgamepic={displayGamePic0}
                     ></GameDisplayBlock>
                   </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle1}
+                      sendgamedesc={displayGameDesc1}
+                      sendgamepic={displayGamePic1}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle2}
+                      sendgamedesc={displayGameDesc2}
+                      sendgamepic={displayGamePic2}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle3}
+                      sendgamedesc={displayGameDesc3}
+                      sendgamepic={displayGamePic3}
+                    ></GameDisplayBlock>
+                  </li>
                 </ul>
               </Element>
-
-            </Element> {/*Container Element End Tag*/}
+              <Element>
+                <ul className={label + "UL"}>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle0}
+                      sendgamedesc={displayGameDesc0}
+                      sendgamepic={displayGamePic0}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle1}
+                      sendgamedesc={displayGameDesc1}
+                      sendgamepic={displayGamePic1}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle2}
+                      sendgamedesc={displayGameDesc2}
+                      sendgamepic={displayGamePic2}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle3}
+                      sendgamedesc={displayGameDesc3}
+                      sendgamepic={displayGamePic3}
+                    ></GameDisplayBlock>
+                  </li>
+                </ul>
+              </Element>
+              <Element>
+                <ul className={label + "UL"}>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle0}
+                      sendgamedesc={displayGameDesc0}
+                      sendgamepic={displayGamePic0}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle1}
+                      sendgamedesc={displayGameDesc1}
+                      sendgamepic={displayGamePic1}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle2}
+                      sendgamedesc={displayGameDesc2}
+                      sendgamepic={displayGamePic2}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle3}
+                      sendgamedesc={displayGameDesc3}
+                      sendgamepic={displayGamePic3}
+                    ></GameDisplayBlock>
+                  </li>
+                </ul>
+              </Element>
+              <Element>
+                <ul className={label + "UL"}>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle0}
+                      sendgamedesc={displayGameDesc0}
+                      sendgamepic={displayGamePic0}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle1}
+                      sendgamedesc={displayGameDesc1}
+                      sendgamepic={displayGamePic1}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle2}
+                      sendgamedesc={displayGameDesc2}
+                      sendgamepic={displayGamePic2}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle3}
+                      sendgamedesc={displayGameDesc3}
+                      sendgamepic={displayGamePic3}
+                    ></GameDisplayBlock>
+                  </li>
+                </ul>
+              </Element>
+              <Element>
+                <ul className={label + "UL"}>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle0}
+                      sendgamedesc={displayGameDesc0}
+                      sendgamepic={displayGamePic0}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle1}
+                      sendgamedesc={displayGameDesc1}
+                      sendgamepic={displayGamePic1}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle2}
+                      sendgamedesc={displayGameDesc2}
+                      sendgamepic={displayGamePic2}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle3}
+                      sendgamedesc={displayGameDesc3}
+                      sendgamepic={displayGamePic3}
+                    ></GameDisplayBlock>
+                  </li>
+                </ul>
+              </Element>
+              <Element>
+                <ul className={label + "UL"}>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle0}
+                      sendgamedesc={displayGameDesc0}
+                      sendgamepic={displayGamePic0}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle1}
+                      sendgamedesc={displayGameDesc1}
+                      sendgamepic={displayGamePic1}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle2}
+                      sendgamedesc={displayGameDesc2}
+                      sendgamepic={displayGamePic2}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle3}
+                      sendgamedesc={displayGameDesc3}
+                      sendgamepic={displayGamePic3}
+                    ></GameDisplayBlock>
+                  </li>
+                </ul>
+              </Element>
+              <Element>
+                <ul className={label + "UL"}>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle0}
+                      sendgamedesc={displayGameDesc0}
+                      sendgamepic={displayGamePic0}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle1}
+                      sendgamedesc={displayGameDesc1}
+                      sendgamepic={displayGamePic1}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle2}
+                      sendgamedesc={displayGameDesc2}
+                      sendgamepic={displayGamePic2}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle3}
+                      sendgamedesc={displayGameDesc3}
+                      sendgamepic={displayGamePic3}
+                    ></GameDisplayBlock>
+                  </li>
+                </ul>
+              </Element>
+              <Element>
+                <ul className={label + "UL"}>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle0}
+                      sendgamedesc={displayGameDesc0}
+                      sendgamepic={displayGamePic0}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle1}
+                      sendgamedesc={displayGameDesc1}
+                      sendgamepic={displayGamePic1}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle2}
+                      sendgamedesc={displayGameDesc2}
+                      sendgamepic={displayGamePic2}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle3}
+                      sendgamedesc={displayGameDesc3}
+                      sendgamepic={displayGamePic3}
+                    ></GameDisplayBlock>
+                  </li>
+                </ul>
+              </Element>
+            </Element>{" "}
+            {/*Container Element End Tag*/}
           </Carousel.Item>
-
-          <Carousel.Item id="GameCarouselItem"><h1>Here is where the game will go!</h1></Carousel.Item>
+          <Carousel.Item>
+            <h1>This is where the games will go!</h1>
+          </Carousel.Item>
         </Carousel>
       </div>
     );

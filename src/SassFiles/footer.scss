@@ -7,16 +7,25 @@ $picsize: 50px;
 
 // This file serves as the styling for the Footer Element located at the bottom of the page.
 
-
 //Footer
 #Footer {
-  h1{
-    color:#00a8d6;
-    font-size:20px;
+  background: $color4;
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
+  h1 {
+        background: none;
+    color: #00a8d6;
+    font-size: 20px;
   }
-    background: $color4;
-    width: 100%;
-    bottom: 0px;
-    position:absolute;
+  #FooterList {
+    background: none;
+    .FooterItems {
+      background: none;
+      a{
+        background: none;
+      }
 
+    }
   }
+}
