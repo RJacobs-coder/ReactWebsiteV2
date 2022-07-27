@@ -23,10 +23,10 @@ class ModelDisplayBlock extends React.Component {
     return (
     <div className={label + "MainContainer"}>
         <ul id={label + "UL"}>
-        <li><img className={label + "Image"} src={pic}></img></li>
-        <li><button className={label + "Button"}>PLAY</button></li>
+        <li className={label + "ImageLI"}><img className={label + "Image"} src={pic}></img></li>
+        <li className={label + "ButtonLI"}><button className={label + "Button"}>PLAY</button></li>
         
-        <li><div className={label + "TextContainer"}>
+        <li  className={label + "InfoLI"}><div className={label + "TextContainer"}>
             <h1 className={label + "Title"}>{title}</h1>
             <p className={label + "Description"}> {desc}</p>
             

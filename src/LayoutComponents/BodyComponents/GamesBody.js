@@ -149,11 +149,29 @@ class GamesBody extends React.Component {
                       sendgamepic={displayGamePic2}
                     ></GameDisplayBlock>
                   </li>
+                </ul>
+              </Element>
+              <Element>
+                <ul className={label + "UL"}>
                   <li className={label + "LI"}>
                     <GameDisplayBlock
-                      sendgametitle={displayGameTitle3}
-                      sendgamedesc={displayGameDesc3}
-                      sendgamepic={displayGamePic3}
+                      sendgametitle={displayGameTitle0}
+                      sendgamedesc={displayGameDesc0}
+                      sendgamepic={displayGamePic0}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle1}
+                      sendgamedesc={displayGameDesc1}
+                      sendgamepic={displayGamePic1}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle2}
+                      sendgamedesc={displayGameDesc2}
+                      sendgamepic={displayGamePic2}
                     ></GameDisplayBlock>
                   </li>
                 </ul>
@@ -181,11 +199,29 @@ class GamesBody extends React.Component {
                       sendgamepic={displayGamePic2}
                     ></GameDisplayBlock>
                   </li>
+                </ul>
+              </Element>
+              <Element>
+                <ul className={label + "UL"}>
                   <li className={label + "LI"}>
                     <GameDisplayBlock
-                      sendgametitle={displayGameTitle3}
-                      sendgamedesc={displayGameDesc3}
-                      sendgamepic={displayGamePic3}
+                      sendgametitle={displayGameTitle0}
+                      sendgamedesc={displayGameDesc0}
+                      sendgamepic={displayGamePic0}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle1}
+                      sendgamedesc={displayGameDesc1}
+                      sendgamepic={displayGamePic1}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle2}
+                      sendgamedesc={displayGameDesc2}
+                      sendgamepic={displayGamePic2}
                     ></GameDisplayBlock>
                   </li>
                 </ul>
@@ -213,11 +249,29 @@ class GamesBody extends React.Component {
                       sendgamepic={displayGamePic2}
                     ></GameDisplayBlock>
                   </li>
+                </ul>
+              </Element>
+              <Element>
+                <ul className={label + "UL"}>
                   <li className={label + "LI"}>
                     <GameDisplayBlock
-                      sendgametitle={displayGameTitle3}
-                      sendgamedesc={displayGameDesc3}
-                      sendgamepic={displayGamePic3}
+                      sendgametitle={displayGameTitle0}
+                      sendgamedesc={displayGameDesc0}
+                      sendgamepic={displayGamePic0}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle1}
+                      sendgamedesc={displayGameDesc1}
+                      sendgamepic={displayGamePic1}
+                    ></GameDisplayBlock>
+                  </li>
+                  <li className={label + "LI"}>
+                    <GameDisplayBlock
+                      sendgametitle={displayGameTitle2}
+                      sendgamedesc={displayGameDesc2}
+                      sendgamepic={displayGamePic2}
                     ></GameDisplayBlock>
                   </li>
                 </ul>
@@ -245,13 +299,6 @@ class GamesBody extends React.Component {
                       sendgamepic={displayGamePic2}
                     ></GameDisplayBlock>
                   </li>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle3}
-                      sendgamedesc={displayGameDesc3}
-                      sendgamepic={displayGamePic3}
-                    ></GameDisplayBlock>
-                  </li>
                 </ul>
               </Element>
               <Element>
@@ -275,109 +322,6 @@ class GamesBody extends React.Component {
                       sendgametitle={displayGameTitle2}
                       sendgamedesc={displayGameDesc2}
                       sendgamepic={displayGamePic2}
-                    ></GameDisplayBlock>
-                  </li>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle3}
-                      sendgamedesc={displayGameDesc3}
-                      sendgamepic={displayGamePic3}
-                    ></GameDisplayBlock>
-                  </li>
-                </ul>
-              </Element>
-              <Element>
-                <ul className={label + "UL"}>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle0}
-                      sendgamedesc={displayGameDesc0}
-                      sendgamepic={displayGamePic0}
-                    ></GameDisplayBlock>
-                  </li>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle1}
-                      sendgamedesc={displayGameDesc1}
-                      sendgamepic={displayGamePic1}
-                    ></GameDisplayBlock>
-                  </li>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle2}
-                      sendgamedesc={displayGameDesc2}
-                      sendgamepic={displayGamePic2}
-                    ></GameDisplayBlock>
-                  </li>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle3}
-                      sendgamedesc={displayGameDesc3}
-                      sendgamepic={displayGamePic3}
-                    ></GameDisplayBlock>
-                  </li>
-                </ul>
-              </Element>
-              <Element>
-                <ul className={label + "UL"}>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle0}
-                      sendgamedesc={displayGameDesc0}
-                      sendgamepic={displayGamePic0}
-                    ></GameDisplayBlock>
-                  </li>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle1}
-                      sendgamedesc={displayGameDesc1}
-                      sendgamepic={displayGamePic1}
-                    ></GameDisplayBlock>
-                  </li>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle2}
-                      sendgamedesc={displayGameDesc2}
-                      sendgamepic={displayGamePic2}
-                    ></GameDisplayBlock>
-                  </li>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle3}
-                      sendgamedesc={displayGameDesc3}
-                      sendgamepic={displayGamePic3}
-                    ></GameDisplayBlock>
-                  </li>
-                </ul>
-              </Element>
-              <Element>
-                <ul className={label + "UL"}>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle0}
-                      sendgamedesc={displayGameDesc0}
-                      sendgamepic={displayGamePic0}
-                    ></GameDisplayBlock>
-                  </li>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle1}
-                      sendgamedesc={displayGameDesc1}
-                      sendgamepic={displayGamePic1}
-                    ></GameDisplayBlock>
-                  </li>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle2}
-                      sendgamedesc={displayGameDesc2}
-                      sendgamepic={displayGamePic2}
-                    ></GameDisplayBlock>
-                  </li>
-                  <li className={label + "LI"}>
-                    <GameDisplayBlock
-                      sendgametitle={displayGameTitle3}
-                      sendgamedesc={displayGameDesc3}
-                      sendgamepic={displayGamePic3}
                     ></GameDisplayBlock>
                   </li>
                 </ul>

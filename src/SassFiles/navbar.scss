@@ -5,15 +5,21 @@ $color4: #fcfcd4;
 
 // This file serves as the Nav bar on the left side of the site. Currently only used by buttons.
 
-
+// Default Sizes for Mobile.
 $picsize: 50px;
+$maxHeight: 200px;
+$minWidth: 290px;
+$maxWidth: 500px;
 // Main Div Container for Navigation bar and Body content - App.js Component.
 #NavBodyDiv {
     position: fixed;
     height: 100%;
     width: 100%;
-    padding-top: 100px;
+    padding-top: 7%;
     display: inline-block;
+    max-width: $maxWidth;
+    max-height: $maxHeight;
+    margin: 0%;
     
     
     //Left Nav Bar
@@ -26,31 +32,21 @@ $picsize: 50px;
   
     }
     #NavBarContainer{
-      width:10%;// currently at zero to prevent main body from disapearing.
+      width:20%;// currently at zero to prevent main body from disapearing.
       .NavButtonsList{
-        padding-top:10px;
+        padding-top:10%;
+        .NavButtons {
+          background-color: $color3;
+          color: black;
+          border-color: #00a8d6;
+          border-radius: 20%;
+          height: 10%;
+          width: 100%;
+          
+        }
       }
     }
   
-    .NavButtons {
-      background-color: $color3;
-      color: black;
-      border-color: #00a8d6;
-      border-radius: 20%;
-      
-      padding-top:0.1%;
-      height: 50px;
-      width: 150px;
-    }
+ 
 }
 
-.NavButtons {
-    //background-color: $color3;
-    color: black;
-    border-color: #00a8d6;
-    border-radius: 20%;
-    
-    padding-top:0.1%;
-    height: 50px;
-    width: 150px;
-  }

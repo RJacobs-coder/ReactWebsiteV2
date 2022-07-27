@@ -3,29 +3,119 @@ $color2: #00a8d6;
 $color3: #e2feff;
 $color4: #fcfcd4;
 
-$picsize: 50px;
+$minWidth: 290px;
+$maxWidth: 500px;
+$maxHeight: 50px;
+
+$picsize: 30px;
+$shadowSize: 20px;
 
 // This file serves as the styling for the Footer Element located at the bottom of the page.
 
 //Footer
 #Footer {
   background: $color4;
-  width: 100%;
   bottom: 0px;
-  position: absolute;
+  position: fixed;
+  margin: 0px;
+  height: 5%;
+  width: 100%;
+  max-width: $maxWidth;
+  max-height: $maxHeight;
   h1 {
-        background: none;
-    color: #00a8d6;
-    font-size: 20px;
-  }
-  #FooterList {
     background: none;
-    .FooterItems {
-      background: none;
-      a{
-        background: none;
-      }
+    color: #00a8d6;
+    font-size: 10px;
+    width: 20%;
+    margin: 0px;
+  }
 
+  #FooterUL {
+    display: inline-block;
+    .FooterItems {
+      ul {
+        li {
+          display: inline-block;
+          position: relative;
+          h2 {
+            padding-left: 5%;
+            font-size: 60%;
+          }
+          h3 {
+            padding-left: 5%;
+            font-size: 40%;
+          }
+        }
+      }
     }
   }
+
+  // Socials Pictures on bottom Right of Site.
+  #SocialDiv {
+    float: right;
+  }
+
+  #SocialList {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    right: 0px;
+    bottom: 0px;
+    background: none;
+    a {
+      display: inline-block;
+    }
+
+    .FooterItems {
+      a {
+        font-size: xx-large;
+      }
+    }
+    .Socials {
+      display: flex;
+      flex-direction: row;
+      background: $color4;
+  
+      .pictureWindow {
+        height: $picsize;
+        width: $picsize;
+        z-index: 4;
+        background: none;
+      }
+      .pictureLogo {
+        height: $picsize;
+        width: $picsize;
+        position: absolute;
+        background: none;
+  
+        margin-top:1%;
+        margin-left:1%;
+  
+        z-index: 3;
+      }
+  
+      .midDrop {
+        height: $shadowSize;
+        width: $shadowSize;
+        margin-top:3%;
+        margin-left:5%;
+        border-radius: 50%;
+        position: absolute;
+  
+        z-index: 2;
+      }
+      .backDrop {
+        height: $shadowSize;
+        width: $shadowSize;
+        border-radius: 50%;
+        margin-top:5%;
+        margin-left:5%;
+        position: absolute;
+  
+        z-index: 1;
+      }
+    }
+  }
+  
 }

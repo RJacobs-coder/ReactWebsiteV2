@@ -76,7 +76,6 @@ class TDModelsBody extends React.Component {
       title1,
       title2,
       title3,
-      title4,
       desc0,
       desc1,
       desc2,
@@ -95,6 +94,62 @@ class TDModelsBody extends React.Component {
       >
         <h1>This is Where the 3D Models will go. Current are Placeholders.</h1>
 
+        <Element>
+          <ModelDisplayBlock
+            sendTitle={title0}
+            sendDesc={desc0}
+            sendPic={pic0}
+          ></ModelDisplayBlock>
+        </Element>
+        <Element>
+          <ModelDisplayBlock
+            sendTitle={title1}
+            sendDesc={desc1}
+            sendPic={pic1}
+          ></ModelDisplayBlock>
+        </Element>
+        <Element>
+          <ModelDisplayBlock
+            sendTitle={title2}
+            sendDesc={desc2}
+            sendPic={pic2}
+          ></ModelDisplayBlock>
+        </Element>
+        <Element>
+          <ModelDisplayBlock
+            sendTitle={title3}
+            sendDesc={desc3}
+            sendPic={pic3}
+          ></ModelDisplayBlock>
+        </Element>
+        <Element>
+          <ModelDisplayBlock
+            sendTitle={title0}
+            sendDesc={desc0}
+            sendPic={pic0}
+          ></ModelDisplayBlock>
+        </Element>
+        <Element>
+          <ModelDisplayBlock
+            sendTitle={title1}
+            sendDesc={desc1}
+            sendPic={pic1}
+          ></ModelDisplayBlock>
+        </Element>
+        <Element>
+          <ModelDisplayBlock
+            sendTitle={title2}
+            sendDesc={desc2}
+            sendPic={pic2}
+          ></ModelDisplayBlock>
+        </Element>
+        <Element>
+          <ModelDisplayBlock
+            sendTitle={title3}
+            sendDesc={desc3}
+            sendPic={pic3}
+          ></ModelDisplayBlock>
+        </Element>
         <Element>
           <ModelDisplayBlock
             sendTitle={title0}

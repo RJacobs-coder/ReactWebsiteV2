@@ -132,55 +132,57 @@ class PhotosBody extends React.Component {
       >
         <h1>These are placeholder photos. More will be made later.</h1>
 
-        <Element>
+        <Element id="PhotoBodyCarouselContainerScrollElement">
           <Carousel
             id="PhotoBodyCarouselContainer"
             cols={1}
             rows={1}
             gap={10}
+            autoplay={5000}
+            mobileBreakpoint={500}
             loop
           >
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path0}></img>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path1}></img>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path2}></img>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path3}></img>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path4}></img>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path5}></img>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path6}></img>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path7}></img>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path8}></img>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path9}></img>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path10}></img>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item className="PhotoBodyCarouselItem">
               <img className="PhotoBodyCarouselPicture" src={path11}></img>
             </Carousel.Item>
           </Carousel>
         </Element>
-        <Element>
+        <Element className="ScrollElementDiv">
           <ul className="PhotoUL">
-            <li>
+            <li className="PhotoLI">
               <PhotoDisplayBlock
                 pathToChild0={path0}
                 pathToChild1={path1}
@@ -190,9 +192,9 @@ class PhotosBody extends React.Component {
             </li>
           </ul>
         </Element>
-        <Element>
+        <Element className="ScrollElementDiv">
           <ul className="PhotoUL">
-            <li>
+            <li className="PhotoLI">
               <PhotoDisplayBlock
                 pathToChild0={path2}
                 pathToChild1={path3}
@@ -202,9 +204,9 @@ class PhotosBody extends React.Component {
             </li>
           </ul>
         </Element>
-        <Element>
+        <Element className="ScrollElementDiv">
           <ul className="PhotoUL">
-            <li>
+            <li className="PhotoLI">
               <PhotoDisplayBlock
                 pathToChild0={path4}
                 pathToChild1={path5}
@@ -214,9 +216,9 @@ class PhotosBody extends React.Component {
             </li>
           </ul>
         </Element>
-        <Element>
+        <Element className="ScrollElementDiv">
           <ul className="PhotoUL">
-            <li>
+            <li className="PhotoLI">
               <PhotoDisplayBlock
                 pathToChild0={path6}
                 pathToChild1={path7}
@@ -226,9 +228,9 @@ class PhotosBody extends React.Component {
             </li>
           </ul>
         </Element>
-        <Element>
+        <Element className="ScrollElementDiv">
           <ul className="PhotoUL">
-            <li>
+            <li className="PhotoLI">
               <PhotoDisplayBlock
                 pathToChild0={path8}
                 pathToChild1={path9}
@@ -238,9 +240,9 @@ class PhotosBody extends React.Component {
             </li>
           </ul>
         </Element>
-        <Element>
+        <Element className="ScrollElementDiv">
           <ul className="PhotoUL">
-            <li>
+            <li className="PhotoLI">
               <PhotoDisplayBlock
                 pathToChild0={path10}
                 pathToChild1={path11}

@@ -15,11 +15,11 @@ function App() {
   console.log("Initial Set - " + currentBody);
 
   // Sets up the Button Values.
-  const buttonValues = ["Home", "About Me", "Games", "Photos", "3D Models"];
+  const buttonValues = ["Home", "AboutMe", "Games", "Photos", "3DModels"];
   const buttonArray = [];
 
   // Sets up the Different Bodies into an array.
-  const bodyValues = ["Home", "About Me", "Games", "Photos", "3D Models"];
+  const bodyValues = ["Home", "AboutMe", "Games", "Photos", "3DModels"];
   const bodyArray = [
     <HomeBody></HomeBody>,
     <AboutMeBody></AboutMeBody>,
@@ -45,8 +45,18 @@ function App() {
     console.log("Before Click - " + currentBody);
     setBody(e.value);
     console.log("After Click - " + currentBody);
+    
     return currentBody;
   };
+
+  // On hover events for Styling.
+  function MouseOver(event) {
+    event.target.style = "background: #fcfcd4; color: #00a8d6";
+    event.target = "Socials"
+  }
+  function MouseOut(event) {
+    event.target.style = "";
+  }
 
   // Creates Multiple Buttons with unique ID's and puts them all into an array.
   for (let i = 0; i < buttonValues.length; i++) {
@@ -56,6 +66,8 @@ function App() {
         id={i + "NavButton"}
         value={buttonValues[i]}
         onClick={(e) => bodySwitch(e.target)}
+        onMouseOver={MouseOver}
+        onMouseOut={MouseOut}
       >
         {buttonValues[i]}
       </button>
@@ -69,24 +81,19 @@ function App() {
     </li>
   ));
 
-  // Wave animation elements for background.
-  let numberofWaves = 5;
-  let waveArray = [];
-  for (let i = 0; i < numberofWaves; i++) {waveArray.push(<div className="wave"></div>);}
-  let printWaves = waveArray.map((items) => items);
-
   return (
     <div className="App">
       <Header></Header>
-      <div className="waves">{printWaves}</div>
+
       <div id="NavBodyDiv">
         <div id="NavBarContainer">
           <ul id="LeftNavButtonList">{listButtons}</ul>
         </div>
+
+        {/* <div className="waves">{printWaves}</div> */}
         <div className="MainBody" id={"MainBody-" + currentBody}>
           {currentSelection}
         </div>
-        
       </div>
 
       <Footer></Footer>

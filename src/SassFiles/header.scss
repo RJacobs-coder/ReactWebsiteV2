@@ -3,7 +3,12 @@ $color2: #00a8d6;
 $color3: #e2feff;
 $color4: #fcfcd4;
 
-$picsize: 50px;
+$minWidth: 290px;
+$maxWidth: 500px;
+$maxHeight: 30px;
+
+$picsize: 30px;
+$shadowSize: 20px;
 
 // This file serves as the main Body Styling. This includes all the different Components that will be
 //swapped out but occupy the same space below the Header and to the right of the Nav Buttons.
@@ -12,9 +17,11 @@ $picsize: 50px;
 
 #MainHeader {
   background: $color4;
-  position: absolute;
-  height: 100px;
+  position: fixed;
+  height: 100%;
   width: 100%;
+  max-width: $maxWidth;
+  max-height: $maxHeight;
 
   #MainTitle {
     display: inline-block;
@@ -22,16 +29,18 @@ $picsize: 50px;
 
     #MainHeaderTitle {
       color: $color2;
-      font-size: 75px;
+      font-size: 100%;
       background-color: $color4;
+      &hover{
+        color: purple !important;
+      }
     }
   }
 
+  // Social Media buttons - Located in top right of Webpage.
   #SocialDiv {
     float: right;
   }
-
-  // Social Media buttons - Located in top right of Webpage.
 
   #SocialList {
     position: absolute;
@@ -40,7 +49,6 @@ $picsize: 50px;
     padding: 0;
     right: 0px;
     top: 0px;
-    background: none;
     a {
       display: inline-block;
     }
@@ -53,30 +61,39 @@ $picsize: 50px;
     .pictureWindow {
       height: $picsize;
       width: $picsize;
-      z-index: 2;
-      background: none;
+      z-index: 4;
     }
     .pictureLogo {
       height: $picsize;
       width: $picsize;
       position: absolute;
-      background: none;
+
+      margin-top: 1%;
+      margin-right: 1%;
+
+      z-index: 3;
+    }
+
+    .midDrop {
+      height: $shadowSize;
+      width: $shadowSize;
+      margin-top: 3%;
+      margin-left: 5%;
+      border-radius: 50%;
+      position: absolute;
 
       z-index: 2;
     }
     .backDrop {
-      height: $picsize;
-      width: $picsize;
+      height: $shadowSize;
+      width: $shadowSize;
       border-radius: 50%;
+      margin-top: 3%;
+      margin-left: 5%;
       position: absolute;
-      background: none;
-    }
-    .midDrop {
-      height: $picsize;
-      width: $picsize;
-      border-radius: 50%;
-      position: absolute;
-      background: none;
+
+      z-index: 1;
     }
   }
 }
+
