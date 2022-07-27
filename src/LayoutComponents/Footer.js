@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Socials } from "/home/robert/Documents/ReactWebsiteV2/src/Components/Socials.js";
+import { Socials } from "../Components/Socials";
 
 // This page serves as footer of the page displaying contact information.
 
