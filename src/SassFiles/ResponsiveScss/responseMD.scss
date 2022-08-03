@@ -1,0 +1,293 @@
+
+
+/* Resoonsive Web Cofiguation File for Web Development.
+Aimed at Medium Devices such as Small Tablets upto Laptops.
+
+500px Width -> 1000px Width
+*/
+
+
+
+
+@media screen  and (min-width: 500px){
+
+  $maxWidth: 1000px;
+  $maxHeight: 1000px;
+  $picsize: 40px;
+  $shadowSize: 30px;
+
+  // Header Section
+  #MainHeader {
+    max-width: $maxWidth;
+    max-height: 40px;
+    #MainTitle {
+      #MainHeaderTitle {
+        color: purple; // Check for ScreenSize
+        font-size: 200%;
+      }
+    }
+
+    .Socials {
+      .pictureWindow {
+        height: $picsize;
+        width: $picsize;
+      }
+      .pictureLogo {
+        height: $picsize;
+        width: $picsize;
+      }
+      .midDrop {
+        height: $shadowSize;
+        width: $shadowSize;
+      }
+      .backDrop {
+        height: $shadowSize;
+        width: $shadowSize;
+      }
+    }
+  }
+
+  // Nav Bar / Body Section
+  #NavBodyDiv {
+    max-width: $maxWidth;
+    max-height: 500px;
+    padding-top: 5%;
+    #NavBarContainer {
+      max-width: $maxWidth;
+      height: 100%;
+      width: 10%;
+      // Nav Buttons
+      .NavButtonsList {
+        padding-top: 20%;
+        .NavButtons {
+          height: 20px;
+          width: 75px;
+          
+        }
+      }
+    }
+  }
+  // Body Section -  Default Values.
+  body {
+    height: 100%;
+    width: 80%;
+    max-width: $maxWidth;
+    max-height: $maxHeight;
+    h1 {
+      font-size: 100%;
+    }
+  }
+  // Body Section
+  .MainBody {
+    width: 80%;
+    height: 100%;
+  }
+
+  // Home Body Section
+  #MainBody-Home {
+    h1 {
+      color: red; // Will Need later.
+    }
+  }
+  // AboutMe Body Section
+
+  #MainBody-AboutMe {
+    height: 100%;
+    width: 90%;
+    h1 {
+      font: 100%;
+    }
+
+    .ListTestingGallery {
+      // Figure out how to get Pictures next to Text
+    }
+    .ListTestingDivider {
+      height: 100%;
+      width: 100%;
+    }
+    .aboutMePic {
+      height: 30%;
+      width: 60%;
+    }
+    .aboutMeText {
+      font-size: 50%;
+      height: 100%;
+      width: 50%;
+    }
+  }
+
+  //Game Body Section
+
+  .GameBodyMainContainer {
+    // Scrolling Elements.
+    height: 100%;
+    width: 95%;
+    #GameBodyClass-containerElement {
+      height: 100%;
+
+
+      // GameDisplayBlock.js Components located in the Component Folder.
+      .GameDisplayBlockMainContainer {
+        height: 80%;
+        .GameDisplayBlockImage {
+          height: 200%;
+          width: 90%;
+        }
+
+        .GameDisplayBlockTitle {
+          font-size: 60%;
+        }
+        .GameDisplayBlockDescription {
+          font-size: 50%;
+        }
+        .GameDisplayBlockLI {
+          height: 25%;
+          .GameDisplayBlockButton {
+            height: 30px;
+            width: 100%;
+
+            font-size: 5%;
+          }
+        }
+      }
+    }
+  }
+
+  //Photo Body Section
+  #MainBody-Photos {
+    h1 {
+      font-size: 150%;
+    }
+
+    // Page Scroll Element.
+    #PhotoBodyClass-containerElement {
+      height: 110%;
+      width: 80%;
+      padding-bottom: 15%;
+    }
+    #PhotoBodyCarouselContainerScrollElement {
+      width: 95%;
+      height: 30%;
+      padding-bottom: 15%;
+      
+    }
+
+    // Carousel Component - Top of PhotoBody.js
+    .PhotoBodyCarouselPicture {
+      width: 100%;
+    }
+
+
+    // PhotoDisplayBlock.js component - Child Component of PhotosBody.js - Located in Components Folder.
+    .DisplayBlockMainContainer {
+      margin-right: 0px;
+      .DisplayBlockChildContainer {
+        margin-inline: 2.5%;
+        .DisplayBlockTitle {
+          font-size: 200%;
+        }
+        .DisplayBlockImage {
+          width: 80%;
+          height: 100%;
+        }
+        .DisplayBlockButton {
+          width: 50%;
+        }
+      }
+    }
+  }
+  // TDModel body Section
+  #MainBody-3DModels {
+    width: 75%;
+    height: 100%;
+    #ModelBodyClass-containerElement {
+      width: 100%;
+      height: 130%;
+
+      // ModelDisplayBlock.js component - Child Component of TDModelsBody.js - Located in Components Folder.
+      .ModelDisplayBlockMainContainter {
+        width: 100%;
+        height: 100%;
+      }
+
+      #ModelDisplayBlockUL {
+        .ModelDisplayBlockImageLI {
+          height: 80%;
+          width: 60%;
+
+          .ModelDisplayBlockImage {
+            height: 80%;
+            width: 100%;
+          }
+        }
+
+        .ModelDisplayButtonLI { // Need to Figure out Buttons.
+          width: 400%;
+          height: 400%;
+
+          .ModelDisplayBlockButton {
+            width: 400%;
+            height: 400%;
+
+          }
+        }
+        .ModelDisplayBlockTextContainer {
+  
+          .ModelDisplayBlockTitle {
+            font-size: 150%;
+          }
+          .ModelDisplayBlockDescription {
+            font-size: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // Footer Section
+  #Footer {
+    max-width: $maxWidth;
+    max-height: $maxHeight;
+    width: 100%;
+    height: 6%;
+    h1 {
+      font-size: 100%;
+    }
+    #FooterUL {
+      .FooterItems {
+        ul {
+          li {
+            h2 {
+              font-size: 100%;
+            }
+            h3 {
+              font-size: 100%;
+            }
+          }
+        }
+      }
+    }
+    #SocialList {
+
+      .Socials {
+        .pictureWindow {
+          height: $picsize;
+          width: $picsize;
+        }
+        .pictureLogo {
+          height: $picsize;
+          width: $picsize;
+        }
+        .midDrop {
+          height: $shadowSize;
+          width: $shadowSize;
+        }
+        .backDrop {
+          height: $shadowSize;
+          width: $shadowSize;
+        }
+      }
+    }
+  }
+  
+}

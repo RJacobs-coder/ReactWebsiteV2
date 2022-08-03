@@ -15,9 +15,6 @@
   font-size: 100%;
   background-color: #fcfcd4;
 }
-#MainHeader #MainTitle #MainHeaderTitlehover {
-  color: purple !important;
-}
 #MainHeader #SocialDiv {
   float: right;
 }
@@ -104,14 +101,11 @@ body {
   background-color: #00a8d6;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100%;
-  width: 80%;
   max-width: 500px;
-  max-height: 740px;
+  max-height: 200px;
   margin-trim: 100%;
 }
 body h1 {
-  font-size: 15px;
   color: #fcfcd4;
 }
 body p {
@@ -119,29 +113,19 @@ body p {
 }
 
 .MainBody {
-  padding-left: 17%;
+  padding-left: 25%;
   padding-bottom: 0%;
-  top: 15%;
+  top: 7%;
   position: absolute;
   float: right;
   z-index: -1;
-  width: 100%;
-  height: 100%;
   list-style-type: none;
 }
 
-#MainBody-Home {
-  width: 80%;
-  height: 3000px;
-}
 #MainBody-Home h1 {
   padding-left: 10%;
 }
 
-#MainBody-AboutMe {
-  height: 100%;
-  width: 90%;
-}
 #MainBody-AboutMe h1 {
   padding-left: 5%;
 }
@@ -155,28 +139,19 @@ body p {
   backdrop-filter: blur(5.1px);
   border-radius: 15px;
   -webkit-backdrop-filter: blur(5.1px);
-  height: 100%;
-  width: 100%;
 }
 #MainBody-AboutMe .aboutMePic {
   list-style-type: none;
-  height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
 #MainBody-AboutMe .aboutMeText {
   list-style-type: none;
   color: #fcfcd4;
-  font-size: 50%;
-  height: 100%;
-  width: 50%;
   line-height: 0.1px;
 }
 
 .GameBodyMainContainer {
-  width: 90%;
-  height: 100%;
   display: block;
 }
 .GameBodyMainContainer h1 {
@@ -184,20 +159,14 @@ body p {
 }
 .GameBodyMainContainer #GameBodyClass-containerElement {
   position: relative;
-  width: 100%;
-  height: 100%;
   overflow: scroll;
 }
 .GameBodyMainContainer #GameBodyClass-containerElement .GameBodyUL {
-  width: 100%;
-  height: 100%;
   list-style-type: none;
-  padding-bottom: 5%;
+  padding-bottom: 0%;
   display: inline-flex;
 }
 .GameBodyMainContainer #GameBodyClass-containerElement .GameBodyUL .GameBodyLI {
-  height: 100%;
-  width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 1%;
@@ -206,8 +175,6 @@ body p {
 .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer {
   list-style-type: none;
   position: relative;
-  height: 100%;
-  width: 80%;
   border: 0%;
   padding-top: 10%;
   padding-bottom: 10%;
@@ -219,27 +186,19 @@ body p {
   border-radius: 15px;
   -webkit-backdrop-filter: blur(5.1px);
 }
-.GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockImage {
-  height: 70%;
-  width: 100%;
-}
 .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockTitle {
-  font-size: 5%;
   padding-left: 5%;
+  padding-top: 30%;
 }
 .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockDescription {
-  font-size: 5%;
   padding-left: 5%;
 }
 .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockButton {
   background-color: #e2feff;
-  font-size: 5%;
   text-align: center;
   color: black;
   border-color: #00a8d6;
   border-radius: 20%;
-  height: 100%;
-  width: 100%;
   margin: auto;
   text-align: center;
   float: top;
@@ -247,56 +206,35 @@ body p {
 
 #MainBody-Photos {
   display: inline-block;
-  height: 740px;
-  width: 500px;
   margin: 0%;
-  height: 100%;
-  width: 100%;
 }
 #MainBody-Photos h1 {
-  font-size: 60%;
   padding-left: 5%;
 }
 #MainBody-Photos #PhotoBodyClass-containerElement {
   position: relative;
-  height: 100%;
-  width: 80%;
   overflow: scroll;
   padding-left: 0%;
   margin: 0px;
 }
 #MainBody-Photos #PhotoBodyCarouselContainerScrollElement {
-  height: 20%;
-  width: 90%;
   padding-left: 5%;
 }
 #MainBody-Photos #PhotoBodyCarouselContainer {
   margin-bottom: 100%;
-  width: 100%;
-  height: 100%;
-}
-#MainBody-Photos .PhotoBodyCarouselPicture {
-  height: 60%;
-  width: 80%;
 }
 #MainBody-Photos .ScrollElementDiv {
   padding-left: 10%;
-  width: 100%;
 }
 #MainBody-Photos .PhotoUL {
   list-style-type: none;
-  height: 80%;
-  width: 100%;
   margin-right: 0%;
   padding-top: 2%;
 }
 #MainBody-Photos .PhotoUL .PhotoLI {
-  width: 120%;
   position: relative;
 }
 #MainBody-Photos .DisplayBlockMainContainer {
-  height: 100%;
-  width: 60%;
   position: relative;
 }
 #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer {
@@ -305,42 +243,28 @@ body p {
   backdrop-filter: blur(5.1px);
   border-radius: 20%;
   -webkit-backdrop-filter: blur(5.1px);
-  height: 80%;
-  width: 45%;
   display: inline-block;
   margin-inline: 2%;
 }
 #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer .DisplayBlockTitle {
   color: #fcfcd4;
-  font-size: 100%;
   text-align: center;
 }
 #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer .DisplayBlockImage {
   padding-right: 10%;
   padding-left: 10%;
-  height: 60%;
-  width: 80%;
 }
 #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer .DisplayBlockButton {
   background-color: #e2feff;
-  font-size: 55%;
   color: black;
   border-color: #00a8d6;
   border-radius: 20%;
-  height: 20%;
-  width: 50%;
   display: grid;
   margin: auto;
 }
 
-#MainBody-3DModels {
-  height: 740px;
-  width: 80%;
-}
 #MainBody-3DModels #ModelBodyClass-containerElement {
   position: relative;
-  height: 100%;
-  width: 100%;
   overflow: scroll;
   display: inline-block;
 }
@@ -349,11 +273,10 @@ body p {
 }
 #MainBody-3DModels #ModelBodyClass-containerElement .ModelDisplayBlockMainContainter {
   display: inline-flex;
-  width: 100%;
-  height: 100%;
 }
 #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL {
   padding-left: 5%;
+  margin-top: 5%;
   display: flex;
   list-style-type: none;
   align-items: center;
@@ -362,14 +285,6 @@ body p {
   padding-right: 0%;
   padding-left: 0%;
 }
-#MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockImageLI .ModelDisplayBlockImage {
-  height: 50%;
-  width: 80%;
-}
-#MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayButtonLI {
-  height: 100%;
-  width: 100%;
-}
 #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayButtonLI .ModelDisplayBlockButton {
   background-color: #e2feff;
   font-size: 5%;
@@ -377,8 +292,6 @@ body p {
   color: black;
   border-color: #00a8d6;
   border-radius: 20%;
-  height: 100%;
-  width: 100%;
 }
 #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockTextContainer {
   padding-left: 10%;
@@ -479,11 +392,442 @@ body p {
   z-index: 1;
 }
 
-* {
-  padding: 0;
-  margin: 0%;
-}
+/*Responsive Layouts for multiple Device size such as Mobiles -> Ultra Wide Screens.
+Located in Sub Folder of SassFiles.
+Title Changes Color Based on which Responce is Active. 
+Blue : small 290 - 500
+Purple : med 500 - 1000
+Red : large 1000 - 2000
+Green: extra large - 2000 - 4000
+*/
+/* Resoonsive Web Cofiguation File for Web Development.
+Aimed at small Devices such as Mobile and small Tablets.
 
+290px Width -> 500px Width
+*/
+@media screen and (min-width: 290px) {
+  #MainHeader {
+    max-width: 500px;
+    max-height: 30px;
+  }
+  #MainHeader #MainTitle #MainHeaderTitle {
+    color: blue;
+    font-size: 100%;
+  }
+  #MainHeader .Socials .pictureWindow {
+    height: 30px;
+    width: 30px;
+  }
+  #MainHeader .Socials .pictureLogo {
+    height: 30px;
+    width: 30px;
+  }
+  #MainHeader .Socials .midDrop {
+    height: 20px;
+    width: 20px;
+  }
+  #MainHeader .Socials .backDrop {
+    height: 20px;
+    width: 20px;
+  }
+  #NavBodyDiv {
+    max-width: 500px;
+    max-height: 500px;
+    padding-top: 10%;
+  }
+  #NavBodyDiv #NavBarContainer {
+    max-width: 500px;
+    height: 100%;
+    width: 10%;
+  }
+  #NavBodyDiv #NavBarContainer .NavButtonsList {
+    padding-top: 30%;
+  }
+  #NavBodyDiv #NavBarContainer .NavButtonsList .NavButtons {
+    height: 20px;
+    width: 75px;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 80%;
+    max-width: 500px;
+    max-height: 1000px;
+  }
+  body h1 {
+    font-size: 100%;
+  }
+  .MainBody {
+    width: 80%;
+    height: 100%;
+  }
+  #MainBody-Home h1 {
+    color: orange;
+  }
+  #MainBody-AboutMe {
+    height: 100%;
+    width: 90%;
+  }
+  #MainBody-AboutMe h1 {
+    font: 100%;
+  }
+  #MainBody-AboutMe .ListTestingDivider {
+    height: 100%;
+    width: 100%;
+  }
+  #MainBody-AboutMe .aboutMePic {
+    height: 30%;
+    width: 60%;
+  }
+  #MainBody-AboutMe .aboutMeText {
+    font-size: 50%;
+    height: 100%;
+    width: 50%;
+  }
+  .GameBodyMainContainer {
+    height: 100%;
+    width: 105%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement {
+    height: 100%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer {
+    height: 80%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockImage {
+    height: 100%;
+    width: 80%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockTitle {
+    font-size: 60%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockDescription {
+    font-size: 50%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockLI {
+    height: 30%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockLI .GameDisplayBlockButton {
+    height: 40%;
+    width: 80%;
+    font-size: 5%;
+  }
+  #MainBody-Photos h1 {
+    font-size: 80%;
+  }
+  #MainBody-Photos #PhotoBodyClass-containerElement {
+    height: 110%;
+    width: 100%;
+    padding-bottom: 15%;
+  }
+  #MainBody-Photos #PhotoBodyCarouselContainerScrollElement {
+    width: 90%;
+    height: 25%;
+    padding-bottom: 15%;
+  }
+  #MainBody-Photos .PhotoBodyCarouselPicture {
+    width: 100%;
+  }
+  #MainBody-Photos .DisplayBlockMainContainer {
+    margin-right: 0px;
+  }
+  #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer {
+    margin-inline: 5%;
+  }
+  #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer .DisplayBlockTitle {
+    font-size: 100%;
+  }
+  #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer .DisplayBlockImage {
+    width: 80%;
+    height: 100%;
+  }
+  #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer .DisplayBlockButton {
+    width: 50%;
+  }
+  #MainBody-3DModels {
+    width: 75%;
+    height: 100%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement {
+    width: 100%;
+    height: 110%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement .ModelDisplayBlockMainContainter {
+    width: 100%;
+    height: 100%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockImageLI {
+    height: 80%;
+    width: 30%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockImageLI .ModelDisplayBlockImage {
+    height: 80%;
+    width: 100%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayButtonLI {
+    width: 400%;
+    height: 400%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayButtonLI .ModelDisplayBlockButton {
+    width: 400%;
+    height: 400%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockTextContainer {
+    padding-left: 10%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockTextContainer .ModelDisplayBlockTitle {
+    font-size: 80%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockTextContainer .ModelDisplayBlockDescription {
+    font-size: 50%;
+  }
+  #Footer {
+    max-width: 500px;
+    max-height: 1000px;
+    width: 100%;
+    height: 7%;
+  }
+  #Footer h1 {
+    font-size: 60%;
+  }
+  #Footer #FooterUL .FooterItems ul li h2 {
+    font-size: 50%;
+  }
+  #Footer #FooterUL .FooterItems ul li h3 {
+    font-size: 50%;
+  }
+  #Footer #SocialList .Socials .pictureWindow {
+    height: 30px;
+    width: 30px;
+  }
+  #Footer #SocialList .Socials .pictureLogo {
+    height: 30px;
+    width: 30px;
+  }
+  #Footer #SocialList .Socials .midDrop {
+    height: 20px;
+    width: 20px;
+  }
+  #Footer #SocialList .Socials .backDrop {
+    height: 20px;
+    width: 20px;
+  }
+}
+/* Resoonsive Web Cofiguation File for Web Development.
+Aimed at Medium Devices such as Small Tablets upto Laptops.
+
+500px Width -> 1000px Width
+*/
+@media screen and (min-width: 500px) {
+  #MainHeader {
+    max-width: 1000px;
+    max-height: 40px;
+  }
+  #MainHeader #MainTitle #MainHeaderTitle {
+    color: purple;
+    font-size: 200%;
+  }
+  #MainHeader .Socials .pictureWindow {
+    height: 40px;
+    width: 40px;
+  }
+  #MainHeader .Socials .pictureLogo {
+    height: 40px;
+    width: 40px;
+  }
+  #MainHeader .Socials .midDrop {
+    height: 30px;
+    width: 30px;
+  }
+  #MainHeader .Socials .backDrop {
+    height: 30px;
+    width: 30px;
+  }
+  #NavBodyDiv {
+    max-width: 1000px;
+    max-height: 500px;
+    padding-top: 5%;
+  }
+  #NavBodyDiv #NavBarContainer {
+    max-width: 1000px;
+    height: 100%;
+    width: 10%;
+  }
+  #NavBodyDiv #NavBarContainer .NavButtonsList {
+    padding-top: 20%;
+  }
+  #NavBodyDiv #NavBarContainer .NavButtonsList .NavButtons {
+    height: 20px;
+    width: 75px;
+  }
+  body {
+    height: 100%;
+    width: 80%;
+    max-width: 1000px;
+    max-height: 1000px;
+  }
+  body h1 {
+    font-size: 100%;
+  }
+  .MainBody {
+    width: 80%;
+    height: 100%;
+  }
+  #MainBody-Home h1 {
+    color: red;
+  }
+  #MainBody-AboutMe {
+    height: 100%;
+    width: 90%;
+  }
+  #MainBody-AboutMe h1 {
+    font: 100%;
+  }
+  #MainBody-AboutMe .ListTestingDivider {
+    height: 100%;
+    width: 100%;
+  }
+  #MainBody-AboutMe .aboutMePic {
+    height: 30%;
+    width: 60%;
+  }
+  #MainBody-AboutMe .aboutMeText {
+    font-size: 50%;
+    height: 100%;
+    width: 50%;
+  }
+  .GameBodyMainContainer {
+    height: 100%;
+    width: 95%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement {
+    height: 100%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer {
+    height: 80%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockImage {
+    height: 200%;
+    width: 90%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockTitle {
+    font-size: 60%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockDescription {
+    font-size: 50%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockLI {
+    height: 25%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockLI .GameDisplayBlockButton {
+    height: 30px;
+    width: 100%;
+    font-size: 5%;
+  }
+  #MainBody-Photos h1 {
+    font-size: 150%;
+  }
+  #MainBody-Photos #PhotoBodyClass-containerElement {
+    height: 110%;
+    width: 80%;
+    padding-bottom: 15%;
+  }
+  #MainBody-Photos #PhotoBodyCarouselContainerScrollElement {
+    width: 95%;
+    height: 30%;
+    padding-bottom: 15%;
+  }
+  #MainBody-Photos .PhotoBodyCarouselPicture {
+    width: 100%;
+  }
+  #MainBody-Photos .DisplayBlockMainContainer {
+    margin-right: 0px;
+  }
+  #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer {
+    margin-inline: 2.5%;
+  }
+  #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer .DisplayBlockTitle {
+    font-size: 200%;
+  }
+  #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer .DisplayBlockImage {
+    width: 80%;
+    height: 100%;
+  }
+  #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer .DisplayBlockButton {
+    width: 50%;
+  }
+  #MainBody-3DModels {
+    width: 75%;
+    height: 100%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement {
+    width: 100%;
+    height: 130%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement .ModelDisplayBlockMainContainter {
+    width: 100%;
+    height: 100%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockImageLI {
+    height: 80%;
+    width: 60%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockImageLI .ModelDisplayBlockImage {
+    height: 80%;
+    width: 100%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayButtonLI {
+    width: 400%;
+    height: 400%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayButtonLI .ModelDisplayBlockButton {
+    width: 400%;
+    height: 400%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockTextContainer .ModelDisplayBlockTitle {
+    font-size: 150%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockTextContainer .ModelDisplayBlockDescription {
+    font-size: 100%;
+  }
+  #Footer {
+    max-width: 1000px;
+    max-height: 1000px;
+    width: 100%;
+    height: 6%;
+  }
+  #Footer h1 {
+    font-size: 100%;
+  }
+  #Footer #FooterUL .FooterItems ul li h2 {
+    font-size: 100%;
+  }
+  #Footer #FooterUL .FooterItems ul li h3 {
+    font-size: 100%;
+  }
+  #Footer #SocialList .Socials .pictureWindow {
+    height: 40px;
+    width: 40px;
+  }
+  #Footer #SocialList .Socials .pictureLogo {
+    height: 40px;
+    width: 40px;
+  }
+  #Footer #SocialList .Socials .midDrop {
+    height: 30px;
+    width: 30px;
+  }
+  #Footer #SocialList .Socials .backDrop {
+    height: 30px;
+    width: 30px;
+  }
+}
+/* Resoonsive Web Cofiguation File for Web Development.
+Aimed at Large Devices such as Latops upto Desktop Computers.
+
+1000px Width -> 2000px Width
+*/
 @media only screen and (min-width: 1000px) {
   #MainHeader {
     max-width: 2000px;
@@ -511,22 +855,24 @@ body p {
   }
   #NavBodyDiv {
     max-width: 2000px;
-    max-height: 500px;
-    padding-top: 10%;
+    max-height: 1000px;
+    padding-top: 8%;
   }
   #NavBodyDiv #NavBarContainer {
     max-width: 2000px;
     height: 100%;
-    width: 10%;
+    width: 20%;
   }
   #NavBodyDiv #NavBarContainer .NavButtonsList {
-    padding-top: 6%;
+    padding-top: 5%;
   }
   #NavBodyDiv #NavBarContainer .NavButtonsList .NavButtons {
     height: 50px;
     width: 200px;
   }
   body {
+    padding: 0;
+    margin: 0;
     height: 100%;
     width: 80%;
     max-width: 2000px;
@@ -538,68 +884,96 @@ body p {
   .MainBody {
     width: 80%;
     height: 100%;
+    padding-top: 2%;
   }
   #MainBody-Home h1 {
     color: red;
   }
   #MainBody-AboutMe {
     height: 100%;
-    width: 80%;
+    width: 75%;
   }
   #MainBody-AboutMe h1 {
-    font: 200%;
+    font: 100%;
   }
   #MainBody-AboutMe .ListTestingDivider {
     height: 100%;
     width: 100%;
   }
-  #MainBody-AboutMe .aboutMePic {
-    height: 30%;
-    width: 60%;
+  #MainBody-AboutMe .ListTestingDivider #ListTestingGallery {
+    display: flex;
+    height: 100%;
+    width: 100%;
   }
-  #MainBody-AboutMe .aboutMeText {
+  #MainBody-AboutMe .ListTestingDivider #ListTestingGallery li {
+    height: 100%;
+    width: 100%;
+  }
+  #MainBody-AboutMe .ListTestingDivider #ListTestingGallery li .aboutMePic {
+    height: 100%;
+    width: 100%;
+  }
+  #MainBody-AboutMe .ListTestingDivider #ListTestingGallery li .aboutMeText {
     font-size: 100%;
     height: 100%;
     width: 50%;
   }
   .GameBodyMainContainer {
     height: 100%;
-    width: 105%;
+    width: 95%;
   }
   .GameBodyMainContainer #GameBodyClass-containerElement {
+    height: 73%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameBodyScrollListElement {
+    height: 30%;
+    width: 100%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameBodyUL {
     height: 100%;
+    width: 100%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameBodyLI {
+    height: 100%;
+    width: 100%;
   }
   .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer {
-    height: 80%;
-  }
-  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockImage {
-    height: 100%;
-    width: 100%;
-  }
-  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockTitle {
-    font-size: 120%;
-  }
-  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockDescription {
-    font-size: 80%;
+    height: 70%;
+    width: 90%;
   }
   .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockLI {
-    height: 100%;
+    height: 30%;
+    width: 100%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockLI .GameDisplayBlockImage {
+    height: 150%;
+    width: 100%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockLI .GameDisplayBlockTitle {
+    font-size: 100%;
+    height: 50%;
+    padding-top: 10%;
+  }
+  .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockLI .GameDisplayBlockDescription {
+    font-size: 100%;
+    height: 50%;
   }
   .GameBodyMainContainer #GameBodyClass-containerElement .GameDisplayBlockMainContainer .GameDisplayBlockLI .GameDisplayBlockButton {
-    height: 30px;
+    height: 50%;
     width: 100%;
+    font-size: 100%;
   }
   #MainBody-Photos h1 {
     font-size: 200%;
   }
   #MainBody-Photos #PhotoBodyClass-containerElement {
-    height: 183%;
-    width: 80%;
+    height: 73%;
+    width: 90%;
     padding-bottom: 5%;
   }
   #MainBody-Photos #PhotoBodyCarouselContainerScrollElement {
     width: 95%;
-    height: 33%;
+    height: 50%;
     padding-bottom: 5%;
   }
   #MainBody-Photos .PhotoBodyCarouselPicture {
@@ -607,9 +981,12 @@ body p {
   }
   #MainBody-Photos .DisplayBlockMainContainer {
     margin-right: 0px;
+    display: flex;
   }
   #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer {
     margin-inline: 2.5%;
+    width: 50%;
+    height: 50%;
   }
   #MainBody-Photos .DisplayBlockMainContainer .DisplayBlockChildContainer .DisplayBlockTitle {
     font-size: 200%;
@@ -622,8 +999,8 @@ body p {
     width: 50%;
   }
   #MainBody-3DModels {
-    width: 83%;
-    height: 100%;
+    width: 75%;
+    height: 45%;
   }
   #MainBody-3DModels #ModelBodyClass-containerElement {
     width: 100%;
@@ -633,9 +1010,13 @@ body p {
     width: 100%;
     height: 100%;
   }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL {
+    width: 100%;
+    height: 100%;
+  }
   #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockImageLI {
     height: 80%;
-    width: 30%;
+    width: 40%;
   }
   #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockImageLI .ModelDisplayBlockImage {
     height: 80%;
@@ -649,11 +1030,23 @@ body p {
     width: 400%;
     height: 400%;
   }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockInfoLI {
+    width: 70%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockInfoLI .ModelDisplayBlockTextContainer {
+    padding-left: 10%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockInfoLI .ModelDisplayBlockTextContainer .ModelDisplayBlockTitle {
+    font-size: 200%;
+  }
+  #MainBody-3DModels #ModelBodyClass-containerElement #ModelDisplayBlockUL .ModelDisplayBlockInfoLI .ModelDisplayBlockTextContainer .ModelDisplayBlockDescription {
+    font-size: 150%;
+  }
   #Footer {
     max-width: 2000px;
     max-height: 1000px;
     width: 100%;
-    height: 6.8%;
+    height: 9%;
   }
   #Footer h1 {
     font-size: 200%;
@@ -680,6 +1073,10 @@ body p {
     height: 50px;
     width: 50px;
   }
+}
+* {
+  padding: 0;
+  margin: 0%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,321 @@
+/* Resoonsive Web Cofiguation File for Web Development.
+Aimed at Large Devices such as Latops upto Desktop Computers.
+
+1000px Width -> 2000px Width
+*/
+
+@media only screen and (min-width: 1000px) {
+  $maxWidth: 2000px;
+  $maxHeight: 1000px;
+  $picsize: 80px;
+  $shadowSize: 50px;
+
+  // Header Section
+  #MainHeader {
+    max-width: $maxWidth;
+    max-height: 80px;
+    #MainTitle {
+      #MainHeaderTitle {
+        color: red; // Check for ScreenSize
+        font-size: 400%;
+      }
+    }
+
+    .Socials {
+      .pictureWindow {
+        height: $picsize;
+        width: $picsize;
+      }
+      .pictureLogo {
+        height: $picsize;
+        width: $picsize;
+      }
+      .midDrop {
+        height: $shadowSize;
+        width: $shadowSize;
+      }
+      .backDrop {
+        height: $shadowSize;
+        width: $shadowSize;
+      }
+    }
+  }
+
+  // Nav Bar / Body Section
+  #NavBodyDiv {
+    max-width: $maxWidth;
+    max-height: $maxHeight;
+    padding-top: 8%;
+    #NavBarContainer {
+      max-width: $maxWidth;
+      height: 100%;
+      width: 20%;
+      // Nav Buttons
+      .NavButtonsList {
+        padding-top: 5%;
+        .NavButtons {
+          height: 50px;
+          width: 200px;
+        }
+      }
+    }
+  }
+  // Body Section -  Default Values.
+  body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 80%;
+    max-width: $maxWidth;
+    max-height: $maxHeight;
+    h1 {
+      font-size: 200%;
+    }
+  }
+  // Body Section
+  .MainBody {
+    width: 80%;
+    height: 100%;
+    padding-top: 2%;
+  }
+
+  // Home Body Section
+  #MainBody-Home {
+    h1 {
+      color: red; // Will Need later.
+    }
+  }
+  // AboutMe Body Section
+
+  #MainBody-AboutMe {
+    height: 100%;
+    width: 75%;
+    h1 {
+      font: 100%;
+    }
+
+    .ListTestingDivider {
+      height: 100%;
+      width: 100%;
+
+      #ListTestingGallery {
+        display: flex; // Allows for text to be side by side with picuture.
+        height: 100%;
+        width: 100%;
+        li {
+          height: 100%;
+          width: 100%;
+
+          .aboutMePic {
+            height: 100%;
+            width: 100%;
+          }
+          .aboutMeText {
+            font-size: 100%;
+            height: 100%;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  //Game Body Section
+
+  .GameBodyMainContainer {
+    // Scrolling Elements.
+    height: 100%;
+    width: 95%;
+    #GameBodyClass-containerElement {
+      height: 73%;
+      .GameBodyScrollListElement {
+        height: 30%;
+        width: 100%;
+      }
+
+      .GameBodyUL { // Not Touch
+        height: 100%;
+        width: 100%;
+      }
+      .GameBodyLI { // No Touch
+        height: 100%;
+        width: 100%;
+      }
+      .GameDisplayBlockMainContainer {
+        height: 70%;
+        width: 90%;
+        .GameDisplayBlockLI {
+          height: 30%;
+          width: 100%;
+        .GameDisplayBlockImage {
+          height: 150%;
+          width: 100%;
+        }
+
+        .GameDisplayBlockTitle {
+          font-size: 100%;
+          height: 50%;
+
+        padding-top: 10%;
+        }
+        .GameDisplayBlockDescription {
+          font-size: 100%;
+          height: 50%;
+        }
+
+     
+          .GameDisplayBlockButton {
+            height: 50%;
+            width: 100%;
+            font-size: 100%;
+          }
+        }
+      }
+
+      // GameDisplayBlock.js Components located in the Component Folder.
+    }
+  }
+
+  //Photo Body Section
+  #MainBody-Photos {
+    h1 {
+      font-size: 200%;
+    }
+
+    // Page Scroll Element.
+    #PhotoBodyClass-containerElement {
+      height: 73%;
+      width: 90%;
+      padding-bottom: 5%;
+    }
+    #PhotoBodyCarouselContainerScrollElement {
+      width: 95%;
+      height: 50%;
+      padding-bottom: 5%;
+    }
+
+    // Carousel Component - Top of PhotoBody.js
+    .PhotoBodyCarouselPicture {
+      width: 100%;
+    }
+
+    // PhotoDisplayBlock.js component - Child Component of PhotosBody.js - Located in Components Folder.
+    .DisplayBlockMainContainer {
+      margin-right: 0px;
+      display: flex;
+      .DisplayBlockChildContainer {
+        margin-inline: 2.5%;
+        width: 50%;
+        height: 50%;
+        .DisplayBlockTitle {
+          font-size: 200%;
+        }
+        .DisplayBlockImage {
+          width: 80%;
+          height: 100%;
+        }
+        .DisplayBlockButton {
+          width: 50%;
+        }
+      }
+    }
+  }
+  // TDModel body Section
+  #MainBody-3DModels {
+    width: 75%;
+    height: 45%;
+    #ModelBodyClass-containerElement {
+      width: 100%;
+      height: 168%;
+
+      // ModelDisplayBlock.js component - Child Component of TDModelsBody.js - Located in Components Folder.
+      .ModelDisplayBlockMainContainter {
+        width: 100%;
+        height: 100%;
+      }
+
+      #ModelDisplayBlockUL {
+        width: 100%;
+        height: 100%;
+        .ModelDisplayBlockImageLI {
+          height: 80%;
+          width: 40%;
+
+          .ModelDisplayBlockImage {
+            height: 80%;
+            width: 100%;
+          }
+        }
+
+        .ModelDisplayButtonLI {
+          // Need to Figure out Buttons.
+          width: 400%;
+          height: 400%;
+
+          .ModelDisplayBlockButton {
+            width: 400%;
+            height: 400%;
+          }
+        }
+        .ModelDisplayBlockInfoLI{
+          width:70%;
+        .ModelDisplayBlockTextContainer {
+          padding-left: 10%;
+  
+          .ModelDisplayBlockTitle {
+            font-size: 200%;
+          }
+          .ModelDisplayBlockDescription {
+            font-size: 150%;
+          }
+        }
+        }
+      }
+    }
+  }
+
+  // Footer Section
+  #Footer {
+    max-width: $maxWidth;
+    max-height: $maxHeight;
+    width: 100%;
+    height: 9%;
+    h1 {
+      font-size: 200%;
+    }
+    #FooterUL {
+      .FooterItems {
+        ul {
+          li {
+            h2 {
+              font-size: 100%;
+            }
+            h3 {
+              font-size: 100%;
+            }
+          }
+        }
+      }
+    }
+    #SocialList {
+      .Socials {
+        .pictureWindow {
+          height: $picsize;
+          width: $picsize;
+        }
+        .pictureLogo {
+          height: $picsize;
+          width: $picsize;
+        }
+        .midDrop {
+          height: $shadowSize;
+          width: $shadowSize;
+        }
+        .backDrop {
+          height: $shadowSize;
+          width: $shadowSize;
+        }
+      }
+    }
+  }
+}
