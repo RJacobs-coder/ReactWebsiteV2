@@ -1,4 +1,5 @@
 import React from "react";
+import {motion} from "framer-motion";
 
 import smIcon0 from "../ArtAssets/artAssets/smIcons/iconWindowFB.png";
 import smIcon1 from "../ArtAssets/artAssets/smIcons/iconWindowGitHub.png";
@@ -53,9 +54,12 @@ export const Socials = () => {
   ));
 
   return (
-    <div>
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{delay: 1, duration:1}}>
       <ul id="SocialList">{listItems}</ul>
-    </div>
+    </motion.div>
   );
 };
 

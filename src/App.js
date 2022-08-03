@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 import { Header } from "./LayoutComponents/Header";
 import { Footer } from "./LayoutComponents/Footer";
@@ -25,7 +26,7 @@ function App() {
     <AboutMeBody></AboutMeBody>,
     <GamesBody></GamesBody>,
     <PhotosBody></PhotosBody>,
-    <TDModelsBody></TDModelsBody>,
+    <TDModelsBody></TDModelsBody>
   ];
 
   // Keeps track of which Body is currently selected.
@@ -45,14 +46,14 @@ function App() {
     console.log("Before Click - " + currentBody);
     setBody(e.value);
     console.log("After Click - " + currentBody);
-    
+
     return currentBody;
   };
 
   // On hover events for Styling.
   function MouseOver(event) {
     event.target.style = "background: #fcfcd4; color: #00a8d6";
-    event.target = "Socials"
+    event.target = "Socials";
   }
   function MouseOut(event) {
     event.target.style = "";
@@ -61,16 +62,19 @@ function App() {
   // Creates Multiple Buttons with unique ID's and puts them all into an array.
   for (let i = 0; i < buttonValues.length; i++) {
     buttonArray.push(
-      <button
+      <motion.button
         className="NavButtons"
         id={i + "NavButton"}
         value={buttonValues[i]}
         onClick={(e) => bodySwitch(e.target)}
         onMouseOver={MouseOver}
         onMouseOut={MouseOut}
+        initial={{y:-250, opacity:0}}
+        animate={{y:0, opacity:1}}
+        transition={{delay: (i/5), duration: 1}}
       >
         {buttonValues[i]}
-      </button>
+      </motion.button>
     );
   }
 
@@ -91,11 +95,13 @@ function App() {
         </div>
 
         {/* <div className="waves">{printWaves}</div> */}
-        <div className="MainBody" id={"MainBody-" + currentBody}>
+        <motion.div className="MainBody" id={"MainBody-" + currentBody}
+              initial={{x:250, opacity:0}}
+              animate={{x:0, opacity:1}}
+              transition={{delay: 0.5, duration: 0.5}}>
           {currentSelection}
-        </div>
+        </motion.div>
       </div>
-
       <Footer></Footer>
     </div>
   );

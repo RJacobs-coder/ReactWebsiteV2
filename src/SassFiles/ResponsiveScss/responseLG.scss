@@ -126,6 +126,8 @@ Aimed at Large Devices such as Latops upto Desktop Computers.
     // Scrolling Elements.
     height: 100%;
     width: 95%;
+    max-width: $maxWidth;
+    max-height: $maxHeight;
     #GameBodyClass-containerElement {
       height: 73%;
       .GameBodyScrollListElement {
@@ -190,7 +192,8 @@ Aimed at Large Devices such as Latops upto Desktop Computers.
     }
     #PhotoBodyCarouselContainerScrollElement {
       width: 95%;
-      height: 50%;
+      height: 70%;
+      max-height: 100%;
       padding-bottom: 5%;
     }
 

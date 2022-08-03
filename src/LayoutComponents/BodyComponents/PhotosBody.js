@@ -1,6 +1,7 @@
 import React from "react";
 import Scroll from "react-scroll";
 import Carousel from "better-react-carousel";
+import {motion} from "framer-motion";
 
 import PhotoDisplayBlock from "../../Components/PhotoDisplayBlock";
 

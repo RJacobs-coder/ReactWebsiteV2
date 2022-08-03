@@ -1,6 +1,7 @@
 import React from "react";
 import Scroll from "react-scroll";
 import Carousel from "better-react-carousel";
+
 import GameDisplayBlock from "../../Components/GameDisplayBlock";
 
 import game0 from "../../GameComponents/ExampleGame1";
@@ -200,6 +201,9 @@ class GamesBody extends React.Component {
             <h1>This is where the games will go!</h1>
           </Carousel.Item>
         </Carousel>
+
+        
+        
       </div>
     );
   }

@@ -7,7 +7,8 @@
 
 /*Responsive Layouts for multiple Device size such as Mobiles -> Ultra Wide Screens.
 Located in Sub Folder of SassFiles.
-Title Changes Color Based on which Responce is Active. 
+
+Top Left Header Title Changes Color Based on which Responce is Active. **Only during Development**
 Blue : small 290 - 500
 Purple : med 500 - 1000
 Red : large 1000 - 2000
@@ -17,6 +18,7 @@ Green: extra large - 2000 - 4000
 @import "./ResponsiveScss/responseMD.scss";
 @import "./ResponsiveScss/responseLG.scss";
 //@import "./ResponsiveScss/responseXLG.scss"; // Currently Not completed.
+
 
 
 $color1: #4cd7f4;

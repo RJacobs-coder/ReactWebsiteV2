@@ -1,5 +1,6 @@
 import React from "react";
 import Scroll from "react-scroll";
+import {motion} from "framer-motion";
 
 import ModelDisplayBlock from "../../Components/ModelDisplayBlock";
 
@@ -87,6 +88,7 @@ class TDModelsBody extends React.Component {
     } = this.state;
 
     return (
+
       <Element
         name="ModelBodyClassContainerElement"
         className="element"
